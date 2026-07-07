@@ -1,0 +1,612 @@
+[
+  {
+    "id": "mexico",
+    "name": "Mexico",
+    "flag": "🇲🇽",
+    "region": "Americas",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: Mexican visitor visa required before travel."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "none",
+        "summary": "With a valid US (or Canada/Japan/UK/Schengen) visa or residence permit, no separate Mexican visa is needed — stays under 180 days for tourism/business/transit. You get an FMM arrival form; keep it until departure."
+      },
+      "green_card": {
+        "verdict": "none",
+        "summary": "US permanent residents do not need a Mexican visa for short visits."
+      }
+    },
+    "apply_how": [
+      "If relying on your US visa: no application — carry passport + valid US visa, complete the arrival/FMM form.",
+      "Air entry is the smoother, better-documented path; land-border entries have seen inconsistent enforcement — keep every stamp and form.",
+      "Without a US visa: apply at a Mexican consulate with jurisdiction over your residence."
+    ],
+    "processing_note": "No processing when using the US-visa exemption.",
+    "sources": [
+      {
+        "title": "Embassy of India, Mexico City — notice to Indian nationals travelling to Mexico",
+        "url": "https://indiainmexico.gov.in/public_files/assets/pdf/IMPORTANT_NOTICE_TO_INDIAN_NATIONALS_TRAVELLING_TO_MEXICO.pdf"
+      },
+      {
+        "title": "Embamex (SRE) — visas",
+        "url": "https://embamex.sre.gob.mx/finlandia/index.php/traveling/visas"
+      }
+    ],
+    "last_verified": "2026-07-06",
+    "confidence": "verified"
+  },
+  {
+    "id": "canada",
+    "name": "Canada",
+    "flag": "🇨🇦",
+    "region": "Americas",
+    "base": {
+      "verdict": "required",
+      "summary": "Visitor visa (TRV) required for Indian citizens — a US visa or H-1B changes nothing."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "required",
+        "summary": "Still a full TRV. Being in the US only changes where you give biometrics (US VACs) — not the requirement."
+      },
+      "green_card": {
+        "verdict": "required",
+        "summary": "US green card holders still need a TRV (or eTA if flying, for GC holders — verify current rule for Indian-passport GC holders)."
+      }
+    },
+    "apply_how": [
+      "Apply online through IRCC (ircc.canada.ca) from within the US.",
+      "Give biometrics at a US Visa Application Centre (VAC) — book early, slots are scarce in some cities.",
+      "Processing times swing wildly — check IRCC's live processing-time tool, do not trust stored numbers."
+    ],
+    "processing_note": "Volatile — always check IRCC's current processing times page.",
+    "sources": [
+      {
+        "title": "IRCC — visit Canada",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "uk",
+    "name": "United Kingdom",
+    "flag": "🇬🇧",
+    "region": "Europe",
+    "base": {
+      "verdict": "required",
+      "summary": "Standard Visitor visa required for Indian citizens for any visit."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "transit",
+        "summary": "Visits still need a visa. TRANSIT: airside transit (no border crossing, same calendar day) is DATV-exempt for Indians holding a valid US, Canada, Australia or NZ visa — verified in Home Office transit guidance. Landside transit (bags/terminal change) has separate, stricter rules — check the official guidance for your exact case; other countries' e-visas don't count."
+      }
+    },
+    "apply_how": [
+      "Visit: apply online at gov.uk, biometrics at a VFS centre in the US.",
+      "Airside transit with a valid US visa: no DATV needed (arrive and leave airside, onward same day).",
+      "Landside transit (<48h, crossing the border): different rules — a Visitor in Transit visa or the transit-without-visa concession conditions; verify your exact routing in the Home Office Transit guidance before booking.",
+      "The gov.uk 'Check if you need a UK visa' tool with your exact itinerary is authoritative."
+    ],
+    "processing_note": "Standard Visitor visas from the US commonly take ~3 weeks; varies.",
+    "sources": [
+      {
+        "title": "Home Office — Transit guidance (official PDF, Mar 2026)",
+        "url": "https://assets.publishing.service.gov.uk/media/69c4144a23fcbcd838a6f6be/Transit-v9.pdf"
+      },
+      {
+        "title": "gov.uk — Check if you need a UK visa",
+        "url": "https://www.gov.uk/check-uk-visa"
+      }
+    ],
+    "last_verified": "2026-07-06",
+    "confidence": "verified",
+    "notes": "Airside branch verified; landside branch conditions are in the Transit guidance PDF — treat landside as verify-first."
+  },
+  {
+    "id": "schengen",
+    "name": "Schengen Area",
+    "flag": "🇪🇺",
+    "region": "Europe",
+    "base": {
+      "verdict": "required",
+      "summary": "Schengen short-stay visa required. Your H-1B/US status changes nothing about the requirement."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "required",
+        "summary": "Still required. What your US residence changes: you apply from the US, at the consulate/VFS with jurisdiction over your state, with US immigration documents in your file."
+      },
+      "green_card": {
+        "verdict": "required",
+        "summary": "Still required for Indian passport holders."
+      }
+    },
+    "apply_how": [
+      "Apply to the country of main destination (longest stay), at the consulate/VFS with jurisdiction over your US state.",
+      "Jurisdiction examples (verify each before booking): Arkansas → most consulates route via Houston (e.g. France-VFS Houston, Germany Houston); some route via Chicago or DC depending on country.",
+      "Book appointments 4–8+ weeks ahead in peak season; the appointment shortage is the real constraint, not the paperwork.",
+      "You must hold a US visa/status valid well beyond your return date — many consulates require 3+ months validity back into the US."
+    ],
+    "processing_note": "15 calendar days is the official norm; appointment lead time is the real bottleneck.",
+    "sources": [
+      {
+        "title": "France-Visas / VFS Global USA",
+        "url": "https://france-visas.gouv.fr"
+      },
+      {
+        "title": "Germany — Houston consulate jurisdiction",
+        "url": "https://www.germany.info"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification",
+    "notes": "State→jurisdiction mapping is a seeded stub (Arkansas example included); verify per country before applying."
+  },
+  {
+    "id": "uae",
+    "name": "UAE (Dubai, Abu Dhabi)",
+    "flag": "🇦🇪",
+    "region": "Middle East",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: pre-arranged visa (typically via airline/hotel/agent) required."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "voa",
+        "summary": "With a valid US visa or green card, Indian citizens are eligible for a 14-day visa on arrival (extendable once) — conditions: passport validity ≥ 6 months; the US visa itself must be valid."
+      },
+      "green_card": {
+        "verdict": "voa",
+        "summary": "Green card holders: same visa-on-arrival eligibility; GC must be valid ≥ 6 months."
+      }
+    },
+    "apply_how": [
+      "No pre-application if eligible — present passport + valid US visa/GC at the VOA counter.",
+      "Fee payable at the counter; check the current amount before flying.",
+      "If your US visa is expired, this route is closed — arrange an e-visa via airline/portal instead."
+    ],
+    "processing_note": "On arrival; allow extra time at immigration.",
+    "sources": [
+      {
+        "title": "ICP UAE / Emirates visa information",
+        "url": "https://icp.gov.ae"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "turkiye",
+    "name": "Türkiye",
+    "flag": "🇹🇷",
+    "region": "Europe/Asia",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: sticker visa via consulate required."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "evisa",
+        "summary": "With a valid US/UK/Ireland/Schengen visa or residence permit, Indians can get a single-entry e-Visa online. The supporting document must be valid ON your Türkiye entry date; other countries' e-Visas do NOT count as supporting documents (physical visa/residence permit only)."
+      },
+      "green_card": {
+        "verdict": "evisa",
+        "summary": "Valid US green card also qualifies for the conditional e-Visa."
+      }
+    },
+    "apply_how": [
+      "Apply only at the official portal: evisa.gov.tr (beware lookalike sites).",
+      "Enter supporting-document (US visa/GC) details exactly; arrival must be by an approved carrier for the conditional e-Visa.",
+      "Print the e-Visa; immigration may ask to see the supporting US document."
+    ],
+    "processing_note": "e-Visa is typically issued in minutes.",
+    "sources": [
+      {
+        "title": "evisa.gov.tr — supporting document validity criteria",
+        "url": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-from-us-uk-and-ireland/"
+      },
+      {
+        "title": "Republic of Türkiye e-Visa portal",
+        "url": "https://www.evisa.gov.tr"
+      }
+    ],
+    "last_verified": "2026-07-06",
+    "confidence": "verified"
+  },
+  {
+    "id": "georgia",
+    "name": "Georgia",
+    "flag": "🇬🇪",
+    "region": "Europe/Asia",
+    "base": {
+      "verdict": "evisa",
+      "summary": "Indian passport alone: apply via Georgia's e-Visa portal."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "none",
+        "summary": "Holders of valid US (and several other) visas or residence permits may enter visa-free for up to 90 days in a 180-day period."
+      },
+      "green_card": {
+        "verdict": "none",
+        "summary": "Valid US residence also qualifies for visa-free entry."
+      }
+    },
+    "apply_how": [
+      "Visa-free path: carry passport + the valid US visa/GC used to qualify.",
+      "Otherwise: evisa.gov.ge."
+    ],
+    "sources": [
+      {
+        "title": "Georgia MFA — visa information",
+        "url": "https://www.geoconsul.gov.ge"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "armenia",
+    "name": "Armenia",
+    "flag": "🇦🇲",
+    "region": "Europe/Asia",
+    "base": {
+      "verdict": "evisa",
+      "summary": "Indian citizens: e-Visa online (or visa on arrival at some ports — verify current availability for Indians)."
+    },
+    "apply_how": [
+      "Apply at evisa.mfa.am; typical stay 21 or 120 days depending on visa type.",
+      "Carry hotel + return-ticket proof; border officers do ask."
+    ],
+    "sources": [
+      {
+        "title": "Armenia MFA e-Visa",
+        "url": "https://evisa.mfa.am"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "albania",
+    "name": "Albania",
+    "flag": "🇦🇱",
+    "region": "Europe",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: visa required."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "none",
+        "summary": "Holders of a valid multiple-entry US visa (used at least once) may enter visa-free — historically seasonal/permanent shifts have occurred; verify the current rule before booking."
+      },
+      "green_card": {
+        "verdict": "none",
+        "summary": "Valid US green card holders may enter visa-free (verify current conditions)."
+      }
+    },
+    "apply_how": [
+      "Visa-free path: passport + valid, previously-used US multiple-entry visa or GC.",
+      "Otherwise: e-visa at e-visa.al."
+    ],
+    "sources": [
+      {
+        "title": "Albania MFA — visa regime for foreigners",
+        "url": "https://punetejashtme.gov.al"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "serbia",
+    "name": "Serbia",
+    "flag": "🇷🇸",
+    "region": "Europe",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: visa required (30-day visa-free was for select categories only — verify)."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "none",
+        "summary": "Holders of a valid US visa (or UK/Schengen visa/residence) may enter visa-free up to 90 days — the foreign visa must remain valid during your stay."
+      },
+      "green_card": {
+        "verdict": "none",
+        "summary": "US residence permit also qualifies for the visa-free entry."
+      }
+    },
+    "apply_how": [
+      "Carry passport + the valid US visa/GC.",
+      "Otherwise apply at the Serbian embassy with jurisdiction."
+    ],
+    "sources": [
+      {
+        "title": "Serbia MFA — entry requirements",
+        "url": "https://www.mfa.gov.rs"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "flag": "🇯🇵",
+    "region": "Asia",
+    "base": {
+      "verdict": "required",
+      "summary": "Visa required for Indian citizens; an eVisa exists for tourism for residents of some countries (incl. Indians resident in the US — verify current scope)."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "evisa",
+        "summary": "Being a US resident doesn't waive the requirement, but Indians residing in the US can typically use Japan's eVisa channel for tourism — verify current eligibility."
+      }
+    },
+    "apply_how": [
+      "eVisa: apply via the official Japan eVisa portal if eligible as a US resident.",
+      "Otherwise: paper application via the Japanese consulate/VFS with jurisdiction over your state.",
+      "Single-entry tourist visas are the norm for first-timers."
+    ],
+    "sources": [
+      {
+        "title": "Ministry of Foreign Affairs of Japan — visa",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/index.html"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "singapore",
+    "name": "Singapore",
+    "flag": "🇸🇬",
+    "region": "Asia",
+    "base": {
+      "verdict": "required",
+      "summary": "Visa required for Indian citizens — apply through an authorized agent/airline; there is no e-visa direct-to-applicant channel."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "transit",
+        "summary": "The requirement stands for visits. TRANSIT: Indians may qualify for the 96-hour Visa-Free Transit Facility (VFTF) when transiting to/from a third country via Singapore holding a valid US (or CA/UK/…) visa or long-term pass — direction and validity conditions apply; verify on ICA."
+      }
+    },
+    "apply_how": [
+      "Visit visa: through a Singapore-registered contact/agent or airline (SIA etc.), online via authorized channels.",
+      "VFTF transit: no pre-application, but conditions are strict (onward ticket, qualifying visa validity, one-direction use per trip) — check ICA's current VFTF page."
+    ],
+    "sources": [
+      {
+        "title": "ICA Singapore — visa requirements & VFTF",
+        "url": "https://www.ica.gov.sg"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "thailand",
+    "name": "Thailand",
+    "flag": "🇹🇭",
+    "region": "Asia",
+    "base": {
+      "verdict": "none",
+      "summary": "Right now: 60-day visa-free entry for Indians is in force. BUT a May-2026 cabinet decision approved scrapping it — once published in the Royal Gazette, India drops to a 15-day visa on arrival. Check on your TRAVEL date, not your booking date."
+    },
+    "apply_how": [
+      "Visa-free: passport ≥ 6 months validity, onward ticket, funds proof possible.",
+      "If the visa-free window lapses: Thailand eVisa portal."
+    ],
+    "processing_note": "Change approved but not yet gazetted as of 2026-07-06 — this record will flip; re-verify at mfa.go.th before every trip.",
+    "sources": [
+      {
+        "title": "Thai MFA — visa exemption list (official PDF)",
+        "url": "https://image.mfa.go.th/mfa/0/91fPdh6NtO/VISA_Information/Visa_Exemption_Revised_16_July_2024.pdf"
+      },
+      {
+        "title": "Thai MFA",
+        "url": "https://www.mfa.go.th"
+      }
+    ],
+    "last_verified": "2026-07-06",
+    "confidence": "verified"
+  },
+  {
+    "id": "vietnam",
+    "name": "Vietnam",
+    "flag": "🇻🇳",
+    "region": "Asia",
+    "base": {
+      "verdict": "evisa",
+      "summary": "Indian citizens: Vietnam e-Visa, up to 90 days, single or multiple entry."
+    },
+    "apply_how": [
+      "Apply only at the official portal (evisa.gov.vn); typical processing 3–5 working days.",
+      "Print the e-Visa approval; enter via the port you selected in the application."
+    ],
+    "sources": [
+      {
+        "title": "Vietnam National e-Visa portal",
+        "url": "https://evisa.gov.vn"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "indonesia",
+    "name": "Indonesia (Bali)",
+    "flag": "🇮🇩",
+    "region": "Asia",
+    "base": {
+      "verdict": "voa",
+      "summary": "Indian citizens: Visa on Arrival (or e-VOA online in advance), 30 days, extendable once."
+    },
+    "apply_how": [
+      "e-VOA at molina.imigrasi.go.id before flying (smoother), or pay at the VOA counter on arrival.",
+      "Passport ≥ 6 months validity; onward ticket required."
+    ],
+    "sources": [
+      {
+        "title": "Direktorat Jenderal Imigrasi — e-VOA",
+        "url": "https://molina.imigrasi.go.id"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "malaysia",
+    "name": "Malaysia",
+    "flag": "🇲🇾",
+    "region": "Asia",
+    "base": {
+      "verdict": "none",
+      "summary": "Indian citizens: visa-free entry up to 30 days (business, tourism, social, transit), extended through 31 Dec 2026. Mandatory: Malaysia Digital Arrival Card (MDAC) submitted within 3 days before arrival."
+    },
+    "apply_how": [
+      "Fill the MDAC online within 3 days before arrival (imigresen-online.imi.gov.my).",
+      "Carry onward ticket + accommodation proof."
+    ],
+    "sources": [
+      {
+        "title": "Jabatan Imigresen Malaysia — visa requirement by country",
+        "url": "https://www.imi.gov.my/index.php/en/main-services/visa/visa-requirement-by-country/"
+      },
+      {
+        "title": "MDAC portal",
+        "url": "https://imigresen-online.imi.gov.my/mdac/main"
+      }
+    ],
+    "last_verified": "2026-07-06",
+    "confidence": "verified"
+  },
+  {
+    "id": "costa-rica",
+    "name": "Costa Rica",
+    "flag": "🇨🇷",
+    "region": "Americas",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: consular visa required."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "none",
+        "summary": "With a valid multiple-entry US visa (validity commonly required ≥ 6 months, sometimes ≥ 3 — verify) Indians may enter visa-free for up to 30 days (bounded by the US visa's validity)."
+      },
+      "green_card": {
+        "verdict": "none",
+        "summary": "US permanent residents enter visa-free (stay bounded by rules — verify current allowance)."
+      }
+    },
+    "apply_how": [
+      "Carry the valid US visa/GC used to qualify; airlines check validity strictly.",
+      "Otherwise: consular visa via the Costa Rican embassy."
+    ],
+    "sources": [
+      {
+        "title": "Dirección General de Migración y Extranjería — visa groups",
+        "url": "https://www.migracion.go.cr"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "panama",
+    "name": "Panama",
+    "flag": "🇵🇦",
+    "region": "Americas",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: stamped/authorized visa required."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "none",
+        "summary": "With a valid US visa that has been used at least once to enter the US (validity ≥ 6 months commonly required), Indians may enter visa-free for short stays — verify exact validity/stay conditions."
+      },
+      "green_card": {
+        "verdict": "none",
+        "summary": "Valid US green card similarly qualifies — verify conditions."
+      }
+    },
+    "apply_how": [
+      "Carry passport + qualifying US visa/GC; expect airline document checks.",
+      "Otherwise: authorized visa via a Panamanian consulate."
+    ],
+    "sources": [
+      {
+        "title": "Servicio Nacional de Migración Panamá",
+        "url": "https://www.migracion.gob.pa"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "bahamas",
+    "name": "Bahamas",
+    "flag": "🇧🇸",
+    "region": "Americas",
+    "base": {
+      "verdict": "required",
+      "summary": "Indian passport alone: Bahamian visa required."
+    },
+    "modifiers": {
+      "us_visa": {
+        "verdict": "none",
+        "summary": "Indians arriving FROM the US with a valid US visa (and/or valid US status documents) are typically visa-exempt for short tourist stays — the exemption is tied to arrival from the US; verify current conditions."
+      },
+      "green_card": {
+        "verdict": "none",
+        "summary": "US permanent residents arriving from the US: visa-exempt for short stays (carry the physical green card)."
+      }
+    },
+    "apply_how": [
+      "Book routing via the US; carry passport + US visa/GC; US pre-clearance operates in Nassau on the way back.",
+      "Otherwise: visa via the Bahamas consulate."
+    ],
+    "sources": [
+      {
+        "title": "The Bahamas — Ministry of Foreign Affairs visa requirements",
+        "url": "https://mofa.gov.bs"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "flag": "🇧🇷",
+    "region": "Americas",
+    "base": {
+      "verdict": "evisa",
+      "summary": "Indian citizens: Brazil operates an e-Visa channel for Indians (reinstated in recent years) — apply online; a US visa does not by itself waive the requirement."
+    },
+    "apply_how": [
+      "Apply via Brazil's official e-Visa portal (brazil.vfsevisa.com is the contracted channel — verify current official link via the Brazilian consulate).",
+      "Processing typically ~5–10 business days; multiple-entry validity varies."
+    ],
+    "sources": [
+      {
+        "title": "Consulate General of Brazil — visa information",
+        "url": "https://www.gov.br/mre/en"
+      }
+    ],
+    "last_verified": "TODO",
+    "confidence": "needs_verification"
+  }
+]

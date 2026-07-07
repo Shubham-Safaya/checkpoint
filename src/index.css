@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply bg-paper text-ink; }
+  body { @apply font-body antialiased; }
+  h1, h2, h3 { @apply font-display tracking-tight; }
+  abbr[title] { @apply cursor-help no-underline border-b border-dotted border-ink/50; text-decoration: none; }
+}
+
+@layer components {
+  /* Signature: the milestone marker — rounded-top rectangle, marigold field */
+  .milestone {
+    @apply inline-flex flex-col items-center justify-center bg-marigold text-ink
+      px-3 pt-2 pb-1.5 font-mono text-xs font-semibold leading-tight text-center;
+    border-radius: 999px 999px 6px 6px;
+    box-shadow: 0 2px 0 rgba(27, 29, 33, 0.25);
+    min-width: 4.5rem;
+  }
+  .milestone-sm { @apply px-2 pt-1.5 pb-1 text-[10px]; min-width: 3.2rem; }
+
+  /* Verification date-stamps */
+  .stamp {
+    @apply inline-block font-mono text-[11px] font-medium px-1.5 py-0.5 border rounded-sm;
+    transform: rotate(-1deg);
+  }
+  .stamp-verified { @apply text-linkblue border-linkblue/60 bg-linkblue/5; }
+  .stamp-verify { @apply text-vamber border-vamber/70 bg-vamber/10; }
+  .stamp-sample { @apply text-signalred border-signalred/60 bg-signalred/5; }
+
+  .card { @apply bg-white border border-ink/10 rounded-xl p-4 shadow-sm; }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-ink text-paper
+      px-4 py-2.5 font-semibold text-sm hover:bg-ink/85 transition-colors
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-marigold;
+  }
+  .btn-secondary { @apply bg-transparent text-ink border border-ink/25 hover:bg-ink/5; }
+  .field {
+    @apply w-full rounded-lg border border-ink/20 bg-white px-3 py-2.5 text-sm
+      focus:outline-none focus:border-ink focus:ring-2 focus:ring-marigold/40;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-ink/25 px-3 py-1.5 text-sm
+      cursor-pointer select-none transition-colors hover:border-ink
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-marigold;
+  }
+  .chip-on { @apply bg-ink text-paper border-ink; }
+  .banner-caution { @apply text-sm rounded-lg border border-vamber/50 bg-vamber/10 text-ink px-3 py-2; }
+}
+
+/* one orchestrated moment: card reveal */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { animation: rise 0.35s ease both; }
+  .reveal:nth-child(2) { animation-delay: 70ms; }
+  .reveal:nth-child(3) { animation-delay: 140ms; }
+  .reveal:nth-child(4) { animation-delay: 210ms; }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+}
+
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: #fff; }
+  .card { box-shadow: none; border-color: #999; break-inside: avoid; }
+  a { text-decoration: none; color: inherit; }
+}

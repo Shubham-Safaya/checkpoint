@@ -1,0 +1,21 @@
+{
+  "id": "eb1a-tracker",
+  "title": "EB1A evidence tracker",
+  "group": "immigration",
+  "banner": "USCIS applies a two-step analysis (criteria + final merits). Meeting 3 criteria on paper is the floor, not the bar. Build with an attorney.",
+  "criteria": [
+    { "id": "awards", "title": "Nationally or internationally recognized awards", "hint": "Industry awards, hackathon wins with national reach, fellowship selections. Internal company awards rarely count alone." },
+    { "id": "memberships", "title": "Membership in associations requiring outstanding achievement", "hint": "Senior/Fellow grades (e.g. IEEE Senior Member), invite-only bodies with documented selectivity." },
+    { "id": "press", "title": "Published material about you", "hint": "Articles about you and your work in professional/major media — not authored by you." },
+    { "id": "judging", "title": "Judging the work of others", "hint": "Peer review, hackathon/competition judging, program committees, patent review panels." },
+    { "id": "original", "title": "Original contributions of major significance", "hint": "The heavyweight criterion: adoption metrics, citations, letters from independent experts, industry impact." },
+    { "id": "articles", "title": "Scholarly articles", "hint": "Peer-reviewed papers, or substantive trade/professional publications you authored." },
+    { "id": "exhibitions", "title": "Artistic exhibitions or showcases", "hint": "Mostly for arts fields — skip unless genuinely applicable." },
+    { "id": "leading-role", "title": "Leading or critical role for distinguished organizations", "hint": "Org charts, letters showing your role was critical — for units with documented distinction." },
+    { "id": "salary", "title": "High remuneration relative to the field", "hint": "Comp data vs BLS/levels.fyi percentiles for your occupation and region." },
+    { "id": "commercial", "title": "Commercial success in performing arts", "hint": "Box office / streaming / sales numbers — arts fields only." }
+  ],
+  "sources": [{ "title": "USCIS Policy Manual — EB-1A extraordinary ability", "url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2" }],
+  "last_verified": "TODO",
+  "confidence": "needs_verification"
+}

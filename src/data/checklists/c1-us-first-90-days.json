@@ -1,0 +1,19 @@
+{
+  "id": "us-first-90-days",
+  "title": "US — your first 90 days",
+  "group": "money-us",
+  "banner": "Educational, not financial advice. Employer plans differ — read your own documents.",
+  "items": [
+    { "id": "ssn", "title": "Apply for your SSN", "why": "Everything downstream — payroll, credit, bank bonuses — keys off it. Apply as soon as your status allows.", "link": "https://www.ssa.gov/ssnumber/", "sources": [{ "title": "SSA — Social Security numbers", "url": "https://www.ssa.gov/ssnumber/" }], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "bank", "title": "Open a checking account", "why": "You need a US account for payroll on day one; large banks open accounts with passport + I-94 before the SSN arrives.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "credit", "title": "Start credit history with a secured/starter card", "why": "Your credit age starts the day your first card opens. Two years of clean history is what unlocks good rates later.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "w4", "title": "Sanity-check your W-4 withholding", "why": "Wrong withholding = an interest-free loan to the IRS, or a surprise bill in April.", "link": "https://www.irs.gov/individuals/tax-withholding-estimator", "sources": [{ "title": "IRS withholding estimator", "url": "https://www.irs.gov/individuals/tax-withholding-estimator" }], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "insurance", "title": "Make your employer insurance elections in the enrollment window", "why": "Miss the window and you wait for open enrollment. Health, dental, vision — and check if an HDHP+HSA fits you.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "match401k", "title": "Enroll in 401(k) at least to the full employer match", "why": "The match is a 50–100% instant return. Nothing else you do this year beats it.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "beneficiary", "title": "Set beneficiary designations everywhere", "why": "401(k), insurance, bank accounts. Beneficiaries override wills — five minutes now saves your family a legal mess.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "renters", "title": "Get renter's insurance", "why": "~$15/month covers everything you own; most landlords require it anyway.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "efund", "title": "Set your emergency-fund target band", "why": "On a visa, your emergency fund is also your immigration runway — 6 months beats the standard 3 for H-1B holders (job loss starts a 60-day clock).", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "stateid", "title": "Get your state ID / driver's license", "why": "Carrying your passport everywhere is a bad idea; most states want you licensed within 30–90 days of residency.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
+    { "id": "i94", "title": "Save your I-94 after EVERY entry", "why": "The I-94, not the visa stamp, controls your authorized stay. A wrong I-94 caught early is a fix; caught late it's a status problem.", "link": "https://i94.cbp.dhs.gov/", "sources": [{ "title": "CBP I-94 official site", "url": "https://i94.cbp.dhs.gov/" }], "last_verified": "TODO", "confidence": "needs_verification" }
+  ]
+}

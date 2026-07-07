@@ -1,0 +1,167 @@
+{
+  "steps": [
+    {
+      "id": "you",
+      "title": "You today",
+      "questions": [
+        { "id": "name", "label": "First name (optional — the only typing on this site)", "type": "text" },
+        { "id": "citizenship", "label": "Passport", "type": "select", "options": [
+          { "value": "indian", "label": "Indian" },
+          { "value": "other", "label": "Other (v1 is optimized for Indian citizens)" }
+        ]},
+        { "id": "age_band", "label": "Age", "type": "select", "ordinal": true, "options": [
+          { "value": "18-22", "label": "18–22" }, { "value": "23-26", "label": "23–26" },
+          { "value": "27-30", "label": "27–30" }, { "value": "31-35", "label": "31–35" },
+          { "value": "36-40", "label": "36–40" }, { "value": "40+", "label": "40+" }
+        ]},
+        { "id": "location_now", "label": "Currently living in", "type": "select", "options": [
+          { "value": "india", "label": "India" }, { "value": "usa", "label": "USA" },
+          { "value": "canada", "label": "Canada" }, { "value": "uk", "label": "UK" },
+          { "value": "eu", "label": "EU" }, { "value": "singapore", "label": "Singapore" },
+          { "value": "aus_nz", "label": "Australia–NZ" }, { "value": "middle_east", "label": "Middle East" },
+          { "value": "other", "label": "Other" }
+        ]}
+      ]
+    },
+    {
+      "id": "education_work",
+      "title": "Education and work",
+      "questions": [
+        { "id": "education", "label": "Highest completed", "type": "select", "options": [
+          { "value": "class12", "label": "Class 12" },
+          { "value": "btech", "label": "Bachelor's – Engineering" },
+          { "value": "bachelors_other", "label": "Bachelor's – Other" },
+          { "value": "ms_mem", "label": "Master's (MS-MEM)" },
+          { "value": "mba", "label": "MBA-PGDM" },
+          { "value": "phd", "label": "PhD" }
+        ]},
+        { "id": "ug_tier", "label": "Undergrad college tier (self-assessed)", "type": "select", "options": [
+          { "value": "tier1", "label": "IIT-NIT-BITS-IIIT" },
+          { "value": "tier2", "label": "Tier 2" },
+          { "value": "tier3", "label": "Tier 3" },
+          { "value": "abroad", "label": "Completed abroad" },
+          { "value": "na", "label": "N.A." }
+        ]},
+        { "id": "work_years", "label": "Full-time experience", "type": "select", "ordinal": true, "options": [
+          { "value": "none", "label": "None" }, { "value": "<2", "label": "<2" },
+          { "value": "2-4", "label": "2–4" }, { "value": "5-7", "label": "5–7" },
+          { "value": "8+", "label": "8+" }
+        ]},
+        { "id": "domain", "label": "Domain", "type": "select", "options": [
+          { "value": "consulting", "label": "Consulting" }, { "value": "product", "label": "Product" },
+          { "value": "finance", "label": "Finance" }, { "value": "software", "label": "Software" },
+          { "value": "data", "label": "Data-Analytics" }, { "value": "core_eng", "label": "Core engineering" },
+          { "value": "ops", "label": "Ops-Supply chain" }, { "value": "student", "label": "Student" },
+          { "value": "other", "label": "Other" }
+        ]},
+        { "id": "employer_type", "label": "Employer type", "type": "select", "options": [
+          { "value": "big4_mbb", "label": "Big 4-MBB" }, { "value": "mnc", "label": "Large MNC" },
+          { "value": "startup", "label": "Startup" }, { "value": "psu", "label": "PSU-Govt" },
+          { "value": "family", "label": "Family business" }, { "value": "not_working", "label": "Not working" }
+        ]}
+      ]
+    },
+    {
+      "id": "deciding",
+      "title": "What you're deciding",
+      "questions": [
+        { "id": "goal", "label": "What are you trying to figure out? (pick up to 2)", "type": "chips", "max": 2, "options": [
+          { "value": "mba_india_vs_abroad", "label": "MBA — India vs abroad" },
+          { "value": "ms_mem_abroad", "label": "MS-MEM abroad" },
+          { "value": "bachelors_abroad", "label": "Bachelor's abroad" },
+          { "value": "next_checkpoint", "label": "I'm abroad — what's my next checkpoint" },
+          { "value": "green_card", "label": "Green card strategy" },
+          { "value": "travel", "label": "Travel on my current visa" },
+          { "value": "money", "label": "Money setup checklist" },
+          { "value": "property", "label": "Buy vs rent property" }
+        ]},
+        { "id": "exam_taken", "label": "Exams so far", "type": "chips", "options": [
+          { "value": "none", "label": "None" }, { "value": "cat", "label": "CAT" },
+          { "value": "gmat", "label": "GMAT" }, { "value": "gre", "label": "GRE" }
+        ]},
+        { "id": "cat_attempts", "label": "CAT attempts", "type": "select", "ordinal": true,
+          "showIf": { "field": "exam_taken", "contains": "cat" }, "options": [
+          { "value": "1", "label": "1" }, { "value": "2", "label": "2" }, { "value": "3+", "label": "3+" }
+        ]},
+        { "id": "cat_best_band", "label": "Best CAT percentile", "type": "select", "ordinal": true,
+          "showIf": { "field": "exam_taken", "contains": "cat" }, "options": [
+          { "value": "<90", "label": "<90" }, { "value": "90-95", "label": "90–95" },
+          { "value": "95-98", "label": "95–98" }, { "value": "98-99.5", "label": "98–99.5" },
+          { "value": "99.5+", "label": "99.5+" }
+        ]},
+        { "id": "cat_pool_category", "label": "Your CAT pool — category (IIM shortlist cutoffs differ by category, gender, and academic background; this is public admission-policy math, and pretending otherwise wastes your year)", "type": "select",
+          "showIf": { "anyOf": [ { "field": "exam_taken", "contains": "cat" }, { "field": "goal", "contains": "mba_india_vs_abroad" } ] }, "options": [
+          { "value": "general", "label": "General" }, { "value": "ews", "label": "EWS" },
+          { "value": "obc", "label": "OBC-NC" }, { "value": "sc", "label": "SC" },
+          { "value": "st", "label": "ST" }, { "value": "pwd", "label": "PwD" },
+          { "value": "na", "label": "Prefer not to say" }
+        ]},
+        { "id": "cat_pool_gender", "label": "Your CAT pool — gender", "type": "select",
+          "showIf": { "anyOf": [ { "field": "exam_taken", "contains": "cat" }, { "field": "goal", "contains": "mba_india_vs_abroad" } ] }, "options": [
+          { "value": "male", "label": "Male" }, { "value": "female", "label": "Female" },
+          { "value": "other", "label": "Other" }, { "value": "na", "label": "Prefer not to say" }
+        ]},
+        { "id": "cat_pool_background", "label": "Your CAT pool — academic background", "type": "select",
+          "showIf": { "anyOf": [ { "field": "exam_taken", "contains": "cat" }, { "field": "goal", "contains": "mba_india_vs_abroad" } ] }, "options": [
+          { "value": "engineer", "label": "Engineer" }, { "value": "non_engineer", "label": "Non-engineer" },
+          { "value": "na", "label": "Prefer not to say" }
+        ]},
+        { "id": "prep_hours", "label": "Realistic prep hours per week alongside your current job and sleep", "type": "select", "ordinal": true, "options": [
+          { "value": "<5", "label": "<5" }, { "value": "5-10", "label": "5–10" },
+          { "value": "10-15", "label": "10–15" }, { "value": "15+", "label": "15+" },
+          { "value": "fulltime", "label": "I'm full-time free" }
+        ]},
+        { "id": "budget_band", "label": "Total budget without loans (family + savings)", "type": "select", "ordinal": true, "options": [
+          { "value": "<25L", "label": "<₹25L" }, { "value": "25-50L", "label": "₹25–50L" },
+          { "value": "50-75L", "label": "₹50–75L" }, { "value": "75L-1Cr", "label": "₹75L–1Cr" },
+          { "value": ">1Cr", "label": ">₹1Cr" }
+        ]},
+        { "id": "loan_access", "label": "Loan access", "type": "select", "options": [
+          { "value": "collateral", "label": "Collateral-backed available" },
+          { "value": "no_collateral", "label": "No-collateral only (Prodigy-MPower style)" },
+          { "value": "no_loans", "label": "Prefer no loans" }
+        ]}
+      ]
+    },
+    {
+      "id": "us_details",
+      "title": "Your US status",
+      "showIf": { "field": "location_now", "in": ["usa"] },
+      "questions": [
+        { "id": "us_status", "label": "Current status", "type": "select", "options": [
+          { "value": "f1", "label": "F-1" }, { "value": "opt", "label": "OPT" },
+          { "value": "stem_opt", "label": "STEM OPT" }, { "value": "h1b", "label": "H-1B" },
+          { "value": "l1", "label": "L-1" }, { "value": "h4_ead", "label": "H-4 EAD" },
+          { "value": "gc_ead", "label": "GC-EAD pending" }, { "value": "green_card", "label": "Green card" },
+          { "value": "citizen", "label": "Citizen" }
+        ]},
+        { "id": "gc_stage", "label": "Green card progress", "type": "select", "options": [
+          { "value": "not_started", "label": "Not started" }, { "value": "perm_filed", "label": "PERM filed" },
+          { "value": "i140_approved", "label": "I-140 approved" },
+          { "value": "pd_waiting", "label": "Priority date waiting" }, { "value": "na", "label": "N.A." }
+        ]},
+        { "id": "hassle_tolerance", "label": "Immigration-paperwork tolerance", "type": "select", "options": [
+          { "value": "grind", "label": "I'll grind any process" },
+          { "value": "moderate", "label": "Moderate" },
+          { "value": "minimal", "label": "Minimal hassle please" }
+        ]}
+      ]
+    },
+    {
+      "id": "priorities",
+      "title": "Priorities",
+      "questions": [
+        { "id": "long_term_base", "label": "Long-term base", "type": "select", "options": [
+          { "value": "us", "label": "US permanently" }, { "value": "india_3_5", "label": "India in 3–5 yrs" },
+          { "value": "singapore_flex", "label": "Singapore-flexible" },
+          { "value": "easiest", "label": "Wherever life's easiest" }, { "value": "undecided", "label": "Undecided" }
+        ]},
+        { "id": "priorities", "label": "Pick your top 2", "type": "chips", "max": 2, "options": [
+          { "value": "earnings", "label": "Lifetime earnings" }, { "value": "pr_speed", "label": "Fastest PR-stability" },
+          { "value": "brand", "label": "Brand-prestige" }, { "value": "low_debt", "label": "Low debt" },
+          { "value": "family", "label": "Family proximity" }, { "value": "wlb", "label": "Work-life balance" }
+        ]}
+      ]
+    }
+  ]
+}
