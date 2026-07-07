@@ -1,0 +1,41 @@
+[
+  {
+    "id": "college.no-crore-loan",
+    "module": "colleges",
+    "priority": 10,
+    "if": { "all": [
+      { "field": "budget_band", "lte": "25-50L" },
+      { "field": "loan_access", "in": ["no_collateral", "no_loans"] }
+    ]},
+    "then": {
+      "verdict": "The ₹1-crore-loan degree is not your only door",
+      "headline": "At your budget and loan access, rank destinations by realistic all-in cost — several credible ones fit under ₹50L",
+      "why": [
+        "Germany public universities: effectively no tuition — a semester fee of a few hundred euros. All-in cost ≈ living expenses only (~₹8–12L/yr). The catch is seat competition and German-language life outside class.",
+        "France: public universities are cheap; Grandes Écoles cost more but scholarship programs (Eiffel, Charpak) regularly cover Indian admits. Campus France is the official channel.",
+        "UK one-year master's: the sticker price looks high, but ONE year of tuition + living often totals less than two years elsewhere — shorter is cheaper.",
+        "Singapore: the Tuition Grant cuts fees sharply in exchange for a 3-year work bond in Singapore. Honest note: the bond is real and enforced — it's a commitment, not a discount.",
+        "US: a funded MS (assistantship/TA/RA) flips the math entirely — but funding is competitive and program-specific; count on it only after the offer letter says so.",
+        "Norway ended free tuition for non-EU/EEA students in 2023 — it does NOT belong on the cheap list anymore. Verify every fee claim on the university's own bursar page; agents' lists go stale."
+      ],
+      "pros": ["A no-loan or small-loan degree preserves the single biggest post-graduation freedom: the freedom to leave a bad job or a bad country"],
+      "cons": ["Cheapest destinations trade off brand recognition in the US job market", "Language and seat competition are real constraints in Germany/France"],
+      "worst_case": {
+        "scenario": "You take the big no-collateral loan anyway, don't land a job in that country's post-study window, and return to an Indian salary with an EMI in dollars",
+        "how_bad": "expensive",
+        "mitigation": "Before borrowing, price the worst case with the affordability calculator: loan size vs realistic first-year home-country salary. If the EMI eats >40% of it, that loan is a trap, not a bridge."
+      },
+      "actions": [
+        { "label": "Open the affordability calculator", "how": "Colleges → your budget applied", "link": "/colleges" },
+        { "label": "Germany official portal", "how": "DAAD program search + fee reality", "link": "https://www.daad.de/en/" }
+      ],
+      "sources": [
+        { "title": "DAAD — tuition fees in Germany", "url": "https://www.daad.de/en/studying-in-germany/plan-your-studies/costs-of-education-and-living/" },
+        { "title": "Campus France — scholarships", "url": "https://www.campusfrance.org/en" },
+        { "title": "MOE Singapore — Tuition Grant scheme", "url": "https://tgonline.moe.gov.sg" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  }
+]

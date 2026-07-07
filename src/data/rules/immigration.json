@@ -1,0 +1,106 @@
+[
+  {
+    "id": "immigration.next-checkpoint-h1b",
+    "module": "immigration",
+    "priority": 10,
+    "if": { "all": [
+      { "field": "us_status", "in": ["h1b"] },
+      { "field": "gc_stage", "in": ["not_started", "perm_filed"] }
+    ]},
+    "then": {
+      "verdict": "Your next checkpoint: get an I-140 approved — by any road",
+      "headline": "On H-1B with the green card not locked in, the approved I-140 is the single document that changes your life math",
+      "why": [
+        "An approved I-140 unlocks H-1B extensions beyond year 6 in 3-year increments — the visa clock stops being an existential threat.",
+        "It locks your priority date: even if you change employers later, the date can travel with you (priority-date retention).",
+        "Ask your employer THIS quarter for the PERM/I-140 timeline in writing. 'We'll start next year' costs you a year of Indian-born EB2/EB3 queue position that compounds for a decade.",
+        "If PERM is paused or your employer won't file: evaluate an EB2-NIW self-petition — you control it, no employer needed, and premium processing is available for NIW I-140s (verify current USCIS list).",
+        "In parallel, start EB1A evidence-building now. EB1A is current or years faster for India-born applicants; even a 'someday' EB1A file changes today's decisions."
+      ],
+      "pros": ["Every path here (PERM, NIW, EB1A) ends at the same document; you can run more than one at once", "Priority date is an asset you own once I-140 approves"],
+      "cons": ["PERM is employer-controlled and slow", "NIW/EB1A standards are real bars, not paperwork formalities"],
+      "worst_case": {
+        "scenario": "Year 5 on H-1B, employer never filed, layoff hits, and the 60-day clock starts with no I-140 to port",
+        "how_bad": "status-risk",
+        "mitigation": "The whole point of acting this quarter: an approved I-140 (even from a past employer) preserves extensions and your date. Attorney-verify your personal case."
+      },
+      "actions": [
+        { "label": "Read PERM vs NIW vs EB1A", "how": "Immigration → the control-timeline-risk comparison", "link": "/immigration/perm-niw-eb1a" },
+        { "label": "Start the EB1A tracker", "how": "Rate yourself on the 10 criteria today", "link": "/immigration/eb1a-tracker" }
+      ],
+      "sources": [
+        { "title": "USCIS — H-1B extensions under AC21 (approved I-140)", "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations" },
+        { "title": "USCIS — premium processing availability", "url": "https://www.uscis.gov/forms/all-forms/how-do-i-request-premium-processing" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "immigration.eb1a-nudge",
+    "module": "immigration",
+    "priority": 20,
+    "if": { "all": [
+      { "field": "goal", "in": ["green_card"] }
+    ]},
+    "then": {
+      "verdict": "EB1A: pick 3 of 10, then argue them well",
+      "headline": "The extraordinary-ability green card is a portfolio you build, not a lottery you enter",
+      "why": [
+        "You need to satisfy at least 3 of USCIS's 10 criteria, then win the 'final merits' judgment that the whole picture shows sustained acclaim.",
+        "Most strong tech/product cases run on the same 4–5 criteria: judging, original contributions, leading/critical role, scholarly/professional articles, high remuneration.",
+        "Evidence compounds: one conference talk becomes 'judging' (panel), 'published material' (coverage), and 'leading role' (invited expert) if you log it properly.",
+        "For India-born applicants, EB1 has run years ahead of EB2/EB3 — this is the difference between a green card this decade and next."
+      ],
+      "pros": ["Self-petitioned: no employer permission, survives job changes", "The evidence-building also advances your career either way"],
+      "cons": ["The final-merits bar is genuinely high — 3 weak criteria lose", "12–24 months of deliberate evidence-building for most profiles"],
+      "worst_case": {
+        "scenario": "A rushed file on thin evidence draws an RFE, then a denial, and you've spent filing fees + attorney fees + a year",
+        "how_bad": "expensive",
+        "mitigation": "Track criteria honestly for 6–12 months BEFORE filing; file when 3 are strong and 2 more are building. Denial doesn't bar refiling stronger."
+      },
+      "actions": [
+        { "label": "Open your tracker", "how": "Rate all 10 criteria, log evidence as it happens", "link": "/immigration/eb1a-tracker" }
+      ],
+      "sources": [
+        { "title": "USCIS Policy Manual Vol. 6 Part F Ch. 2 — extraordinary ability", "url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "immigration.day1-cpt-warning",
+    "module": "immigration",
+    "priority": 15,
+    "if": { "all": [
+      { "field": "us_status", "in": ["opt", "stem_opt"] }
+    ]},
+    "then": {
+      "verdict": "Day-1 CPT: legal on paper, expensive at every next door",
+      "headline": "Day-1 CPT enrollment keeps you 'in status' while quietly raising the risk on every future filing",
+      "why": [
+        "The risk isn't day one — it's later: H-1B extensions, transfers, and especially consular stamping are where Day-1 CPT histories draw RFEs and 221(g)s.",
+        "Officers distinguish 'maintaining status' from 'maintaining credibility': a second master's whose main feature is work authorization invites exactly that scrutiny.",
+        "If the school is ever flagged (see past university shutdowns), everyone who attended carries that history permanently.",
+        "Real alternatives exist: cap-exempt H-1B employers (universities, affiliated nonprofits, research orgs), O-1 exploration if your evidence is building, or a planned year home with a clean re-entry strategy."
+      ],
+      "pros": ["Genuinely accredited programs with real coursework exist in the Day-1 CPT world — the category isn't uniformly fraudulent"],
+      "cons": ["Elevated RFE/denial exposure at extension, transfer, and stamping", "Visa officers at consulates apply the harshest lens", "The history never leaves your file"],
+      "worst_case": {
+        "scenario": "H-1B approved, you travel for stamping, and the consulate issues a 221(g) digging into your CPT employment — you're stuck outside the US for months",
+        "how_bad": "status-risk",
+        "mitigation": "If you already have Day-1 CPT history: document genuine coursework and employer-study nexus meticulously, and do NOT travel for stamping without an attorney reviewing the file first"
+      },
+      "actions": [
+        { "label": "Read the full guide", "how": "Risk spectrum + alternatives, honestly laid out", "link": "/immigration/day1-cpt" },
+        { "label": "Explore cap-exempt employers", "how": "Universities and affiliated nonprofits can file H-1B any month, no lottery", "link": "/immigration/perm-niw-eb1a" }
+      ],
+      "sources": [
+        { "title": "USCIS — curricular practical training", "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/students-and-employment" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  }
+]

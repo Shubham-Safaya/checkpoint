@@ -29,9 +29,10 @@ export default function App() {
   const nav = [
     { to: "/", label: "Home" },
     { to: "/profile", label: "Profile" },
+    { to: "/pathways", label: "Pathways" },
+    { to: "/immigration", label: "Immigration" },
     { to: "/travel", label: "Travel" },
     { to: "/money", label: "Money" },
-    { to: "/immigration/eb1a-tracker", label: "EB1A" },
     { to: "/my-list", label: "My list" },
   ];
 

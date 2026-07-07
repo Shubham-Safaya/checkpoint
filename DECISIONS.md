@@ -14,3 +14,8 @@ Ambiguities resolved with the simpler option, per spec instructions.
 | 8 | Checklist state model: one storage key with `done` map + `eb1a` sub-object | Single key = simpler migration story (`checkpoint.checklists.v1`). |
 | 9 | EB1A criteria file carries one badge for the criteria list as a whole | The 10 criteria are statutory and stable; per-criterion facts arrive in Phase 2 guides. |
 | 10 | Chips with `max`: selecting beyond the cap replaces the oldest selection | Friendlier than blocking; matches "pick up to 2" phrasing. |
+| 11 | Engine core lives in plain JS (`src/engine/evaluate.js`) with a TS wrapper | `npm run check` runs the exact shipped logic in Node with zero build step. |
+| 12 | Flip conditions skip chips (array) fields | Varying multi-selects explodes combinations; scalar selects carry the signal. One flip line per field, cap 3. |
+| 13 | R8–R12 travel rules gate on nonimmigrant `us_status` values; GC/citizen profiles route via `travel.us-visa-unlocks` + destination records | Satisfies "GC holders never see visa-gated cards" while keeping their grid verdicts correct. |
+| 14 | R15 housing card renders via engine but /housing module is Phase 3 | Spec sequences housing UI in Phase 3; the rule content ships now. |
+| 15 | Guides are JSON-driven through one GuidePage component | Six guides, one renderer — copy edits never touch code. |

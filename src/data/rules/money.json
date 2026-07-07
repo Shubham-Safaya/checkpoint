@@ -1,0 +1,64 @@
+[
+  {
+    "id": "money.first-90-days",
+    "module": "money",
+    "priority": 10,
+    "if": { "all": [
+      { "field": "location_now", "in": ["usa"] },
+      { "field": "goal", "in": ["money"] }
+    ]},
+    "then": {
+      "verdict": "Run the first-90-days list, in order",
+      "headline": "Eleven steps, each with a why — most cost you nothing except remembering",
+      "why": [
+        "SSN first: everything else keys off it.",
+        "Credit history starts the day your first card opens — every month you delay is a month of credit age you never get back.",
+        "The 401(k) match is a 50–100% instant return; capturing it outranks every investment debate.",
+        "The I-94 habit (save it every entry) is the cheapest status-protection there is: the I-94, not the visa stamp, controls your authorized stay."
+      ],
+      "pros": ["One afternoon of setup compounds for a decade"],
+      "cons": ["Some steps (SSN, state ID) have DMV/SSA queue realities — start early"],
+      "worst_case": {
+        "scenario": "You skip the I-94 check, an officer typos your admit-until date, and you discover it a year later as an overstay",
+        "how_bad": "status-risk",
+        "mitigation": "Check i94.cbp.dhs.gov after every single entry; errors caught early are fixable at a CBP deferred-inspection office"
+      },
+      "actions": [{ "label": "Open checklist C1", "how": "Money → US first 90 days, with checkboxes that persist", "link": "/money" }],
+      "sources": [{ "title": "CBP I-94", "url": "https://i94.cbp.dhs.gov/" }],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "money.india-compliance",
+    "module": "money",
+    "priority": 11,
+    "if": { "all": [
+      { "field": "location_now", "in": ["usa"] }
+    ]},
+    "then": {
+      "verdict": "Your India accounts have NRI duties — most people are non-compliant for years",
+      "headline": "NRO conversion, FBAR, and DTAA setup are the three that bite; the rest is hygiene",
+      "why": [
+        "Under FEMA you're supposed to convert resident savings accounts to NRO once you're an NRI — most people never do, and it surfaces at the worst times (property sales, large transfers).",
+        "FBAR: if all your non-US accounts COMBINED crossed $10,000 on ANY day of the year, you file FinCEN 114. The penalties for missing it are wildly disproportionate to the crime.",
+        "Without a US Tax Residency Certificate (Form 6166) + Form 10F, Indian banks deduct TDS on your NRO interest at the maximum rate instead of the DTAA rate.",
+        "Mutual-fund KYC still marked 'resident' quietly breaks redemptions and creates mismatched tax reporting in both countries."
+      ],
+      "pros": ["Every item on this list is a one-time or once-a-year fix"],
+      "cons": ["Banks make NRO/NRE conversion annoyingly manual", "FBAR/8938 are easy to forget in your first US filing season"],
+      "worst_case": {
+        "scenario": "Years of unreported Indian accounts surface during a green-card or citizenship review, or an FBAR penalty letter arrives",
+        "how_bad": "expensive",
+        "mitigation": "The IRS has streamlined disclosure procedures for non-willful cases — a cross-border CPA can usually clean up the past at tolerable cost. Start before they find you."
+      },
+      "actions": [{ "label": "Open checklist C2", "how": "Money → India NRI compliance", "link": "/money" }],
+      "sources": [
+        { "title": "FinCEN — FBAR", "url": "https://www.fincen.gov/report-foreign-bank-and-financial-accounts" },
+        { "title": "IRS — Form 8938", "url": "https://www.irs.gov/forms-pubs/about-form-8938" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  }
+]

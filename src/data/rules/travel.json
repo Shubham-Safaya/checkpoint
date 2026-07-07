@@ -1,0 +1,147 @@
+[
+  {
+    "id": "travel.mexico",
+    "module": "travel",
+    "priority": 10,
+    "if": { "all": [
+      { "field": "citizenship", "in": ["indian"] },
+      { "field": "us_status", "in": ["f1", "opt", "stem_opt", "h1b", "l1", "h4_ead"] }
+    ]},
+    "then": {
+      "verdict": "Mexico: your US visa is the ticket",
+      "headline": "No separate Mexican visa needed while your US visa is valid",
+      "why": [
+        "Mexico exempts Indian citizens holding a valid US (or Canada/Japan/UK/Schengen) visa or residence permit — stays under 180 days.",
+        "You complete an arrival form (FMM); keep it until departure.",
+        "Air entry is the smoother, better-documented path; keep every stamp."
+      ],
+      "pros": ["Zero paperwork, zero fees, long allowed stay"],
+      "cons": ["The exemption rides on your US visa's validity — an expired stamp closes it even if your US status is valid"],
+      "worst_case": {
+        "scenario": "You fly with an expired visa stamp (valid status, expired sticker) and are denied boarding",
+        "how_bad": "recoverable",
+        "mitigation": "Check the visa sticker's end date, not your I-94, before booking"
+      },
+      "actions": [{ "label": "Read the Mexico record", "how": "Verified sources + entry steps", "link": "/travel/mexico" }],
+      "sources": [{ "title": "Embassy of India, Mexico City — travel notice", "url": "https://indiainmexico.gov.in/public_files/assets/pdf/IMPORTANT_NOTICE_TO_INDIAN_NATIONALS_TRAVELLING_TO_MEXICO.pdf" }],
+      "last_verified": "2026-07-06",
+      "confidence": "verified"
+    }
+  },
+  {
+    "id": "travel.canada",
+    "module": "travel",
+    "priority": 11,
+    "if": { "all": [
+      { "field": "citizenship", "in": ["indian"] },
+      { "field": "us_status", "in": ["f1", "opt", "stem_opt", "h1b", "l1", "h4_ead"] }
+    ]},
+    "then": {
+      "verdict": "Canada: full visitor visa, no shortcuts",
+      "headline": "Your H-1B changes where you apply, not whether",
+      "why": [
+        "Indian citizens need a Temporary Resident Visa regardless of US status.",
+        "From the US you apply online via IRCC and give biometrics at a US VAC.",
+        "Processing times are volatile — link out, never trust stored numbers."
+      ],
+      "pros": ["Multi-year multiple-entry TRVs are commonly issued, so it's one application for many trips"],
+      "cons": ["Biometrics appointment scarcity in some US cities", "Processing can outlast your travel plans"],
+      "worst_case": {
+        "scenario": "You book flights first, and the TRV takes longer than the trip date",
+        "how_bad": "recoverable",
+        "mitigation": "Apply months before any concrete plan; the TRV is trip-independent"
+      },
+      "actions": [{ "label": "Canada record + live processing times", "how": "Travel → Canada", "link": "/travel/canada" }],
+      "sources": [{ "title": "IRCC — visit Canada", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html" }],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "travel.uk-transit",
+    "module": "travel",
+    "priority": 12,
+    "if": { "all": [
+      { "field": "citizenship", "in": ["indian"] },
+      { "field": "us_status", "in": ["f1", "opt", "stem_opt", "h1b", "l1", "h4_ead"] }
+    ]},
+    "then": {
+      "verdict": "UK: visits need a visa; transit has two branches",
+      "headline": "Airside transit with a valid US visa needs no DATV — landside is a different question",
+      "why": [
+        "Indian nationals are on the UK's transit-visa (DATV) list.",
+        "Airside (no border crossing, onward same day, to/from qualifying routes): DATV-exempt with a valid US, Canada, Australia or NZ visa — verified in Home Office guidance.",
+        "Landside (<24–48h, crossing the border for bags/terminal change): stricter separate rules; other countries' e-visas don't count. Verify your exact routing."
+      ],
+      "pros": ["Cheap London layovers become possible on the airside branch"],
+      "cons": ["Booking a bags-recheck itinerary by accident puts you in the landside branch unprepared"],
+      "worst_case": {
+        "scenario": "Separate tickets force a landside bag recheck you didn't plan for, and you're denied boarding at origin",
+        "how_bad": "recoverable",
+        "mitigation": "Book through-checked itineraries for airside transit, or verify landside eligibility before booking split tickets"
+      },
+      "actions": [{ "label": "Both branches, spelled out", "how": "Travel → United Kingdom", "link": "/travel/uk" }],
+      "sources": [{ "title": "Home Office — Transit guidance (Mar 2026)", "url": "https://assets.publishing.service.gov.uk/media/69c4144a23fcbcd838a6f6be/Transit-v9.pdf" }],
+      "last_verified": "2026-07-06",
+      "confidence": "verified"
+    }
+  },
+  {
+    "id": "travel.schengen",
+    "module": "travel",
+    "priority": 13,
+    "if": { "all": [
+      { "field": "citizenship", "in": ["indian"] },
+      { "field": "us_status", "in": ["f1", "opt", "stem_opt", "h1b", "l1", "h4_ead"] }
+    ]},
+    "then": {
+      "verdict": "Schengen: H-1B changes nothing — plan for the appointment, not the form",
+      "headline": "Visa required; the real constraint is consular appointment lead time from the US",
+      "why": [
+        "Apply to the country of main destination, at the consulate/VFS holding jurisdiction over your US state (Arkansas typically routes via Houston for several countries — verify per country).",
+        "Appointment slots in peak season book out 4–8+ weeks; the paperwork itself is routine.",
+        "Most consulates want your US status/visa valid months beyond your return."
+      ],
+      "pros": ["Multi-year multiple-entry Schengen visas increasingly issued to clean travel histories"],
+      "cons": ["Jurisdiction rules are per-country and unforgiving — the wrong consulate refuses the file"],
+      "worst_case": {
+        "scenario": "No appointment exists within your travel window",
+        "how_bad": "recoverable",
+        "mitigation": "Book the visa appointment BEFORE the flights; check multiple consulates' calendars where your itinerary honestly allows a different main destination"
+      },
+      "actions": [{ "label": "Schengen record + jurisdiction stub", "how": "Travel → Schengen", "link": "/travel/schengen" }],
+      "sources": [{ "title": "France-Visas / VFS USA", "url": "https://france-visas.gouv.fr" }],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "travel.us-visa-unlocks",
+    "module": "travel",
+    "priority": 14,
+    "if": { "all": [
+      { "field": "citizenship", "in": ["indian"] },
+      { "field": "us_status", "in": ["f1", "opt", "stem_opt", "h1b", "l1", "h4_ead", "gc_ead", "green_card"] }
+    ]},
+    "then": {
+      "verdict": "The list your US visa actually unlocks",
+      "headline": "A valid US visa or green card changes the answer for Indians in a dozen-plus countries",
+      "why": [
+        "Confirmed-by-official-source today: Mexico (visa-free), Türkiye (conditional e-Visa), UK airside transit (DATV-exempt).",
+        "Same pattern, verify before booking: UAE (14-day visa on arrival), Georgia (visa-free 90 days), Albania, Serbia (visa-free with valid US visa), Panama, Costa Rica, Bahamas (arriving from the US).",
+        "Each destination is its own record with its own conditions — validity minimums, 'used at least once' clauses, arrival-route requirements. The grid computes your verdicts."
+      ],
+      "pros": ["Real weekend-trip optionality from any US city without consulate runs"],
+      "cons": ["Every one of these rides on the US visa's validity — the sticker, not your status"],
+      "worst_case": {
+        "scenario": "You plan a multi-country trip around an exemption that changed last quarter",
+        "how_bad": "recoverable",
+        "mitigation": "Open each destination's record the week you book — amber badge means re-verify at the official source linked there"
+      },
+      "actions": [{ "label": "Open the grid with your documents applied", "how": "Travel finder", "link": "/travel" }],
+      "sources": [{ "title": "Per-destination official sources on each record", "url": "/travel" }],
+      "last_verified": "2026-07-06",
+      "confidence": "verified"
+    }
+  }
+]

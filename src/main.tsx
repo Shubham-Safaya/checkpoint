@@ -9,6 +9,9 @@ import DestinationPage from "./modules/travel/DestinationPage";
 import MoneyPage from "./modules/money/MoneyPage";
 import EB1ATracker from "./modules/immigration/EB1ATracker";
 import MyListPage from "./modules/mylist/MyListPage";
+import PathwaysPage from "./modules/pathways/PathwaysPage";
+import ImmigrationPage from "./modules/immigration/ImmigrationPage";
+import GuidePage from "./modules/immigration/GuidePage";
 import "./index.css";
 
 const router = createBrowserRouter(
@@ -22,7 +25,10 @@ const router = createBrowserRouter(
         { path: "travel", element: <TravelPage /> },
         { path: "travel/:id", element: <DestinationPage /> },
         { path: "money", element: <MoneyPage /> },
+        { path: "pathways", element: <PathwaysPage /> },
+        { path: "immigration", element: <ImmigrationPage /> },
         { path: "immigration/eb1a-tracker", element: <EB1ATracker /> },
+        { path: "immigration/:slug", element: <GuidePage /> },
         { path: "my-list", element: <MyListPage /> },
         { path: "*", element: <HomePage /> },
       ],

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "exam.cat-retake-reality",
+    "module": "pathways",
+    "priority": 10,
+    "if": { "all": [
+      { "field": "goal", "in": ["mba_india_vs_abroad"] },
+      { "field": "cat_attempts", "gte": "2" },
+      { "field": "cat_best_band", "lte": "95-98" },
+      { "field": "prep_hours", "lte": "5-10" },
+      { "field": "cat_pool.category", "in": ["general", "ews"] },
+      { "field": "cat_pool.background", "in": ["engineer"] }
+    ]},
+    "then": {
+      "verdict": "Retake #3 is a low-odds, high-cost bet",
+      "headline": "Another CAT attempt at 5–10 prep hours/week is statistically a long shot for A/B/C calls",
+      "why": [
+        "IIM A/B/C shortlists for General-category engineer males have typically required ~99.9th percentile — each IIM publishes its admission policy; check the current year's PDF.",
+        "Moving from the 95–98 band to 99.9+ is a step-change in preparation, not a polish — it rarely happens on unchanged weekly hours.",
+        "Each retake costs a year of salary growth, promotion track, and compounding — and the same season could fund a GMAT/GRE cycle that keeps global doors open."
+      ],
+      "pros": ["If it lands, IIM A/B/C at ₹25–35L total cost is close to unbeatable ROI"],
+      "cons": ["Base rate at your hours", "One shot per year", "Category + academic-background cutoff math is working against you and won't change"],
+      "worst_case": {
+        "scenario": "A third score in the 96–98 band, no A/B/C call, and one more year gone",
+        "how_bad": "expensive",
+        "mitigation": "Run GMAT prep in parallel — large syllabus overlap; a strong GMAT the same season keeps ISB and global MBAs open"
+      },
+      "actions": [
+        { "label": "See your GMAT/GRE fork", "how": "Pathways → exam fork, your profile applied", "link": "/pathways" },
+        { "label": "Price the retake year", "how": "Colleges → affordability calculator", "link": "/colleges" }
+      ],
+      "sources": [{ "title": "IIM Ahmedabad admission policy (current year)", "url": "TODO" }],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "exam.fork",
+    "module": "pathways",
+    "priority": 20,
+    "if": { "any": [
+      { "field": "goal", "in": ["mba_india_vs_abroad", "ms_mem_abroad"] }
+    ]},
+    "then": {
+      "verdict": "Three exams, three different doors",
+      "headline": "CAT, GMAT and GRE are not interchangeable — they open different rooms at different prices",
+      "why": [
+        "CAT: India-only door. Cheapest tuition on the other side (IIM ₹25–35L all-in), but one shot per year, score valid one season, and shortlist cutoffs depend on your category-gender-background pool.",
+        "GMAT: the ISB + global MBA door. Retakeable (5 attempts per rolling year, 8 lifetime), score valid 5 years — one strong season keeps options open across countries and years.",
+        "GRE: the MS/MEM door with growing MBA acceptance. Cheapest optionality per rupee: one exam covers engineering-management, analytics, CS and a widening set of MBA programs."
+      ],
+      "pros": [
+        "Your budget and loan access, not the exam, should pick the door — the matrix below is personalized to both",
+        "GMAT/GRE prep overlaps heavily with CAT quant/verbal — a parallel plan wastes little"
+      ],
+      "cons": [
+        "Chasing all three at once usually means clearing none at the level that matters",
+        "GMAT/GRE-route degrees abroad cost 2–5× an IIM — the door is global, the price is too"
+      ],
+      "worst_case": {
+        "scenario": "A season spent split across exams, with no score strong enough for any target list",
+        "how_bad": "recoverable",
+        "mitigation": "Pick ONE primary exam for this season from the matrix's 'choose this if' lines; keep the second as a planned next season, not a parallel one"
+      },
+      "actions": [
+        { "label": "Compare the three lanes", "how": "The matrix below is highlighted for your profile", "link": "/pathways" },
+        { "label": "Price each destination", "how": "Colleges → tuition explorer", "link": "/colleges" }
+      ],
+      "sources": [
+        { "title": "mba.com (GMAC) — GMAT retake and validity policy", "url": "https://www.mba.com" },
+        { "title": "ets.org — GRE retake and validity policy", "url": "https://www.ets.org/gre" },
+        { "title": "iimcat.ac.in — CAT information", "url": "https://iimcat.ac.in" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "country.low-hassle",
+    "module": "pathways",
+    "priority": 30,
+    "if": { "all": [
+      { "field": "hassle_tolerance", "in": ["minimal"] }
+    ]},
+    "then": {
+      "verdict": "Rank countries by PR predictability, not brand",
+      "headline": "If paperwork tolerance is minimal, pick the queue you can see the end of",
+      "why": [
+        "Canada Express Entry is points-math you can compute today — age, education, language, experience — and the pathway is the same for everyone in the pool.",
+        "Australia's points system is similar: transparent, capricious only at the margins.",
+        "Germany: Blue Card → permanent residence in 21–27 months (with language milestones) is one of the shortest credible PR clocks anywhere.",
+        "UK: Graduate Route gives 2 years post-study without sponsorship; the Skilled Worker → settlement path is rule-based.",
+        "Singapore EP is employer-driven and PR is discretionary — genuinely great to live in, but you cannot compute your odds. Say that honestly.",
+        "US: for Indian-born applicants, the EB2/EB3 employment green-card backlog is measured in DECADES absent EB1/NIW routes. Check the live Visa Bulletin — never trust a stored date."
+      ],
+      "pros": ["Points systems reward exactly the profile you can build deliberately: language scores, degrees, years"],
+      "cons": ["Predictable queues are also popular queues — cutoffs drift up", "Optimizing for PR speed can cost salary ceiling vs the US"],
+      "worst_case": {
+        "scenario": "You optimize for the US on 'minimal hassle' tolerance and spend 15+ years on visa renewals, stamping trips, and I-140 anxiety",
+        "how_bad": "expensive",
+        "mitigation": "Either recalibrate tolerance honestly, or pick a points country while keeping US employment via multinational transfers open"
+      },
+      "actions": [
+        { "label": "Check the live Visa Bulletin", "how": "travel.state.gov — Final Action dates for India EB2/EB3", "link": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" },
+        { "label": "Compute your Express Entry points", "how": "IRCC's official CRS tool", "link": "https://www.cic.gc.ca/english/immigrate/skilled/crs-tool.asp" }
+      ],
+      "sources": [
+        { "title": "IRCC — Express Entry", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html" },
+        { "title": "Make it in Germany — EU Blue Card", "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card" },
+        { "title": "gov.uk — Graduate visa", "url": "https://www.gov.uk/graduate-visa" },
+        { "title": "US Visa Bulletin", "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  }
+]

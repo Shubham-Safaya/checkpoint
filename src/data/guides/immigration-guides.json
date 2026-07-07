@@ -1,0 +1,67 @@
+{
+  "priority-dates": {
+    "title": "How to read the Visa Bulletin",
+    "banner": "Outcomes depend on the facts of your case — verify with an immigration attorney.",
+    "sections": [
+      { "h": "What the bulletin is", "p": "Every month, the State Department publishes which green-card 'priority dates' can move forward. Your priority date is your place in line — set when your PERM (or I-140, for self-petitions) is filed. We never store bulletin dates here: always read the live one.", "link": { "label": "Open the current Visa Bulletin", "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" } },
+      { "h": "Final Action vs Dates for Filing", "p": "Two charts, endlessly confused: 'Dates for Filing' controls when you may SUBMIT the final green-card application (I-485) — when USCIS says that chart applies. 'Final Action' controls when it can be APPROVED. Filing eligibility gets you EAD/AP while you wait; approval needs Final Action to reach your date." },
+      { "h": "Why Indian-born EB2/EB3 waits run to decades", "p": "Per-country caps allocate ~7% of employment green cards per birth country per year. Indian-born demand exceeds that by an order of magnitude, so the queue compounds. This is the single most important fact in US immigration planning for Indians, and most people learn it years too late." },
+      { "h": "Priority-date retention and porting", "p": "Once an I-140 is approved, the priority date generally survives job changes and even employer revocation (with narrow exceptions) — you can attach the old date to a new employer's filing. This is why 'get any I-140 approved' is checkpoint one." }
+    ],
+    "facts": [
+      { "id": "imm.pd.percountry", "claim": "Employment-based green cards are subject to per-country caps (~7%/yr per birth country), producing decade-plus EB2/EB3 backlogs for Indian-born applicants.", "sources": [{ "title": "travel.state.gov — Visa Bulletin", "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" }], "last_verified": "TODO", "confidence": "needs_verification" },
+      { "id": "imm.pd.retention", "claim": "An approved I-140's priority date can generally be retained and ported to later petitions, even after changing employers.", "sources": [{ "title": "USCIS Policy Manual", "url": "https://www.uscis.gov/policy-manual" }], "last_verified": "TODO", "confidence": "needs_verification" }
+    ]
+  },
+  "perm-niw-eb1a": {
+    "title": "PERM vs EB2-NIW vs EB1A",
+    "banner": "Strategy differs case by case — this narrows options; an attorney confirms.",
+    "sections": [
+      { "h": "Who controls it", "p": "PERM: your employer controls everything — timing, job description, whether it happens at all. EB2-NIW: you control it (self-petition); your work must serve US national interest. EB1A: you control it; the bar is 'extraordinary ability' — 3 of 10 criteria plus final merits." },
+      { "h": "Rough timelines", "p": "PERM: prevailing wage + recruitment + certification commonly runs 1.5–2.5 years before the I-140 even files. NIW/EB1A: no PERM stage — you file the I-140 when the evidence is ready, and premium processing (45 business days) is available for both (verify current USCIS premium list)." },
+      { "h": "What job changes do", "p": "PERM/I-140: tied to the sponsoring job; leave too early and the petition may die (date usually survives once approved — 180-day revocation rules apply). NIW: tied to your proposed endeavor, not one employer — job changes within the endeavor are survivable. EB1A: tied to your field; the most job-change-proof of the three." },
+      { "h": "The honest play for most H-1B Indians", "p": "Push the employer's PERM (it's free to you) AND build NIW/EB1A evidence in parallel. They end at the same I-140 checkpoint, and the self-petitions are insurance against the employer never filing — the most common silent failure." }
+    ],
+    "facts": [
+      { "id": "imm.niw.premium", "claim": "Premium processing is available for EB2-NIW and EB1 I-140 petitions (45 business days).", "sources": [{ "title": "USCIS — premium processing", "url": "https://www.uscis.gov/forms/all-forms/how-do-i-request-premium-processing" }], "last_verified": "TODO", "confidence": "needs_verification" }
+    ]
+  },
+  "day1-cpt": {
+    "title": "Day-1 CPT, without the sales pitch",
+    "banner": "STRONGEST CAUTION: this surface is exactly where cases go wrong. Talk to an immigration attorney before enrolling, extending, transferring, or traveling.",
+    "sections": [
+      { "h": "What it is", "p": "Universities whose programs authorize Curricular Practical Training from the first semester — letting you keep working after OPT ends by enrolling as a student. Legal on its face; the question is what it does to your file." },
+      { "h": "Where the risk actually bites", "p": "Not at enrollment — later. H-1B extensions and transfers (USCIS re-examines status history), and above all CONSULAR STAMPING: officers abroad apply the harshest lens to a second master's whose visible purpose was work authorization. 221(g) administrative processing and refusals cluster here." },
+      { "h": "Maintaining status vs maintaining credibility", "p": "Immigration decisions are about the officer believing your story. Real coursework, real attendance, a program with a defensible academic rationale — these maintain credibility. A transcript that says 'enrolled' while you worked full-time 2,000 miles from campus does not." },
+      { "h": "The alternatives people skip", "p": "Cap-exempt H-1B employers (universities, university-affiliated nonprofits, research orgs) can file any month without the lottery. O-1 if your evidence is already strong. Or a deliberately planned year at home — which often beats a compromised file over a 10-year horizon." }
+    ],
+    "facts": [
+      { "id": "imm.cpt.rules", "claim": "CPT must be an integral part of an established curriculum; misuse risks status violations found at later adjudications.", "sources": [{ "title": "USCIS — students and employment", "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/students-and-employment" }], "last_verified": "TODO", "confidence": "needs_verification" }
+    ]
+  },
+  "h1b-clock": {
+    "title": "The H-1B six-year clock",
+    "banner": "Timing rules are technical — attorney-verify your dates before relying on them.",
+    "sections": [
+      { "h": "The six-year max", "p": "H-1B time is capped at six years total — counted by time physically in the US in H-1B (or L) status. H-4 time doesn't count against it." },
+      { "h": "Recapture", "p": "Days spent OUTSIDE the US during your H-1B years can be 'recaptured' — added back at extension time. Kept boarding passes and I-94 history become literal extra months of status. Track every trip." },
+      { "h": "Cap-gap", "p": "F-1 students with a timely-filed, cap-subject H-1B petition get their status and work authorization extended to Oct 1 ('cap-gap') — the bridge between OPT expiry and H-1B start." },
+      { "h": "Beyond year six", "p": "Two doors: (1) an approved I-140 → 3-year extensions indefinitely; (2) a PERM or I-140 pending 365+ days → 1-year extensions. This is why the I-140 checkpoint dominates every H-1B plan." }
+    ],
+    "facts": [
+      { "id": "imm.h1b.sixyear", "claim": "H-1B admission is limited to six years, extendable beyond that via AC21 §104(c) (approved I-140 → 3-year) or §106(a) (PERM/I-140 pending 365+ days → 1-year).", "sources": [{ "title": "USCIS — H-1B specialty occupations", "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations" }], "last_verified": "TODO", "confidence": "needs_verification" }
+    ]
+  },
+  "legal-income": {
+    "title": "What income is legal on your visa",
+    "banner": "STRONGEST DISCLAIMER ON THIS SITE: employment authorization law is unforgiving and fact-specific. Nothing here is advice. Confirm your exact activity with an immigration attorney BEFORE the first dollar.",
+    "sections": [
+      { "h": "Generally fine (passive)", "p": "Passive index investing, interest, dividends, capital gains — buying and selling securities for your own account is investment, not employment. A passively-held rental property (property manager, no active operation) generally sits on the same side. Report everything on taxes regardless." },
+      { "h": "Not authorized (active work)", "p": "Gig work (Uber, DoorDash), active freelancing, consulting on the side, running an operating business you work in — this is employment without authorization, however small, however cash, however 'online for clients abroad'. The downside is status termination and findings that follow you for decades." },
+      { "h": "Attorney territory (gray)", "p": "Monetized content (ads on videos you actively produce), prize money and hackathon winnings, one-off advisory roles, book royalties for ongoing promotion — each has real arguments both ways depending on facts and status. These are precisely the questions a 30-minute attorney consult exists for." }
+    ],
+    "facts": [
+      { "id": "imm.income.passive", "claim": "Passive investment activity is generally not 'employment' for status purposes; active gig/freelance work without authorization is a status violation.", "sources": [{ "title": "USCIS — employment authorization", "url": "https://www.uscis.gov/working-in-the-united-states" }], "last_verified": "TODO", "confidence": "needs_verification" }
+    ]
+  }
+}

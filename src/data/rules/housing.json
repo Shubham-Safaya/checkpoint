@@ -1,0 +1,37 @@
+[
+  {
+    "id": "housing.fork",
+    "module": "housing",
+    "priority": 10,
+    "if": { "all": [
+      { "field": "goal", "in": ["property"] }
+    ]},
+    "then": {
+      "verdict": "Rent vs buy is a horizon question — and on a visa, a status question",
+      "headline": "The 5-year test decides most cases; H-1B adds a card most calculators ignore",
+      "why": [
+        "The 5-year test: if you can't confidently see yourself in this city for 5+ years, transaction costs (~8–10% round trip) usually eat any appreciation — rent.",
+        "Price-to-rent framing: annual rent × 20 vs purchase price is the honest first filter. Above ~22×, buying needs strong non-financial reasons.",
+        "The visa-stability card, said plainly: buying in the US on H-1B means a job loss starts a 60-day clock WHILE you hold a mortgage. That combination — forced job search + forced sale or forced landlording, simultaneously — is the real worst case, and it happens to real people every layoff cycle.",
+        "Where should the first crore go: if long-term base is India in 3–5 years, an India purchase with NRI compliance done right often dominates; if US-permanent, US equity + retirement accounts usually come before US property."
+      ],
+      "pros": ["Owning is a genuine hedge against rent inflation when the horizon is honest", "NRI purchase in India can lock a future base at today's prices"],
+      "cons": ["US: property ties you to a metro while your visa ties you to an employer — two anchors, one boat", "India: NRI purchases have TDS, repatriation, and POA landmines (checklist covers them)"],
+      "worst_case": {
+        "scenario": "Layoff on H-1B: 60 days to find a sponsor, a mortgage due monthly, and a market where selling takes 90+ days",
+        "how_bad": "status-risk",
+        "mitigation": "Buy only with: 6+ months of full carrying costs banked, a spouse with independent status or income where possible, and a realistic resale/rental liquidity check on the specific neighborhood"
+      },
+      "actions": [
+        { "label": "NRI purchase checklist", "how": "Funding trail, POA, TDS-by-seller-type, repatriation — the India-purchase landmines", "link": "/housing" },
+        { "label": "Run the 5-year test", "how": "Housing → mini-calculator (Phase 3)", "link": "/housing" }
+      ],
+      "sources": [
+        { "title": "RBI — acquisition of immovable property in India by NRIs (FEMA)", "url": "https://www.rbi.org.in" },
+        { "title": "Income Tax India — TDS on property purchase", "url": "https://www.incometax.gov.in" }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  }
+]

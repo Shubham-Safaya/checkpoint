@@ -1,0 +1,53 @@
+{
+  "matrix": {
+    "columns": ["cat", "gmat", "gre"],
+    "names": { "cat": "CAT", "gmat": "GMAT", "gre": "GRE" },
+    "rows": [
+      { "label": "Exam-cycle cost", "cat": "~₹2,600 registration", "gmat": "~$275–300 per attempt", "gre": "~$220 per attempt" },
+      { "label": "Retake rules", "cat": "Once per year — one shot per season", "gmat": "5 per rolling 12 months, 8 lifetime", "gre": "Every 21 days, up to 5 per 12 months" },
+      { "label": "Score validity", "cat": "That admission season only", "gmat": "5 years", "gre": "5 years" },
+      { "label": "What it unlocks", "cat": "IIMs + Indian B-schools", "gmat": "ISB + global MBAs", "gre": "MS/MEM everywhere + growing MBA acceptance" },
+      { "label": "Loan implication", "cat": "IIM ₹25–35L — collateral-free NBFC loans routine", "gmat": "Global MBA ₹60L–1.2Cr — collateral or Prodigy/MPower-style", "gre": "MS ₹30–60L; Germany/funded-US routes can be near-zero" },
+      { "label": "Time to admit", "cat": "Nov exam → June start (7 months)", "gmat": "Rolling rounds — 6–18 months by round", "gre": "Fall/Spring intakes — 8–14 months" },
+      { "label": "The category math", "cat": "Shortlist cutoffs vary by category-gender-background pool — public policy PDFs", "gmat": "No category math; whole-profile evaluation", "gre": "No category math; program-specific bars" }
+    ],
+    "choose_if": {
+      "cat": "Choose CAT if: budget ≤ ₹50L is hard, your pool math is favorable (check the current policy PDF, not folklore), and you can commit 15+ hrs/week for one season.",
+      "gmat": "Choose GMAT if: you want ISB or a global MBA, you value a retakeable exam with a 5-year shelf life, and financing ₹60L+ is realistic for you.",
+      "gre": "Choose GRE if: MS/MEM is on your list at all — it keeps the most doors open per rupee of prep, including a later MBA pivot."
+    }
+  },
+  "facts": [
+    {
+      "id": "exam.cat.fee",
+      "claim": "CAT registration for General category has been ~₹2,600 (recent cycles).",
+      "category": "exam",
+      "sources": [{ "title": "iimcat.ac.in", "url": "https://iimcat.ac.in" }],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    },
+    {
+      "id": "exam.gmat.retake",
+      "claim": "GMAT: 5 attempts per rolling 12 months, 8 lifetime; score valid 5 years.",
+      "category": "exam",
+      "sources": [{ "title": "mba.com (GMAC)", "url": "https://www.mba.com" }],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    },
+    {
+      "id": "exam.gre.retake",
+      "claim": "GRE: retake every 21 days, max 5 per 12 months; score valid 5 years.",
+      "category": "exam",
+      "sources": [{ "title": "ets.org/gre", "url": "https://www.ets.org/gre" }],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  ],
+  "salary_bands": [
+    { "value": "lt10", "label": "<₹10L", "mid": 700000 },
+    { "value": "10-20", "label": "₹10–20L", "mid": 1500000 },
+    { "value": "20-35", "label": "₹20–35L", "mid": 2700000 },
+    { "value": "35-50", "label": "₹35–50L", "mid": 4200000 },
+    { "value": "50+", "label": "₹50L+", "mid": 6000000 }
+  ]
+}
