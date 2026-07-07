@@ -1,15 +1,58 @@
 {
   "matrix": {
-    "columns": ["cat", "gmat", "gre"],
-    "names": { "cat": "CAT", "gmat": "GMAT", "gre": "GRE" },
+    "columns": [
+      "cat",
+      "gmat",
+      "gre"
+    ],
+    "names": {
+      "cat": "CAT",
+      "gmat": "GMAT",
+      "gre": "GRE"
+    },
     "rows": [
-      { "label": "Exam-cycle cost", "cat": "~₹2,600 registration", "gmat": "~$275–300 per attempt", "gre": "~$220 per attempt" },
-      { "label": "Retake rules", "cat": "Once per year — one shot per season", "gmat": "5 per rolling 12 months, 8 lifetime", "gre": "Every 21 days, up to 5 per 12 months" },
-      { "label": "Score validity", "cat": "That admission season only", "gmat": "5 years", "gre": "5 years" },
-      { "label": "What it unlocks", "cat": "IIMs + Indian B-schools", "gmat": "ISB + global MBAs", "gre": "MS/MEM everywhere + growing MBA acceptance" },
-      { "label": "Loan implication", "cat": "IIM ₹25–35L — collateral-free NBFC loans routine", "gmat": "Global MBA ₹60L–1.2Cr — collateral or Prodigy/MPower-style", "gre": "MS ₹30–60L; Germany/funded-US routes can be near-zero" },
-      { "label": "Time to admit", "cat": "Nov exam → June start (7 months)", "gmat": "Rolling rounds — 6–18 months by round", "gre": "Fall/Spring intakes — 8–14 months" },
-      { "label": "The category math", "cat": "Shortlist cutoffs vary by category-gender-background pool — public policy PDFs", "gmat": "No category math; whole-profile evaluation", "gre": "No category math; program-specific bars" }
+      {
+        "label": "Exam-cycle cost",
+        "cat": "₹2,600 registration (₹1,300 reserved categories)",
+        "gmat": "$275 test centre / $300 online (US; incl. 5 score reports)",
+        "gre": "~$220 (US; varies by country — check ETS fees page)"
+      },
+      {
+        "label": "Retake rules",
+        "cat": "Once per year — one shot per season",
+        "gmat": "5 per rolling 12 months (16-day gap), 8 lifetime",
+        "gre": "Every 21 days, up to 5 per 12 months"
+      },
+      {
+        "label": "Score validity",
+        "cat": "That admission season only",
+        "gmat": "5 years",
+        "gre": "5 years"
+      },
+      {
+        "label": "What it unlocks",
+        "cat": "IIMs + Indian B-schools",
+        "gmat": "ISB + global MBAs",
+        "gre": "MS/MEM everywhere + growing MBA acceptance"
+      },
+      {
+        "label": "Loan implication",
+        "cat": "IIM ₹25–35L — collateral-free NBFC loans routine",
+        "gmat": "Global MBA ₹60L–1.2Cr — collateral or Prodigy/MPower-style",
+        "gre": "MS ₹30–60L; Germany/funded-US routes can be near-zero"
+      },
+      {
+        "label": "Time to admit",
+        "cat": "Nov exam → June start (7 months)",
+        "gmat": "Rolling rounds — 6–18 months by round",
+        "gre": "Fall/Spring intakes — 8–14 months"
+      },
+      {
+        "label": "The category math",
+        "cat": "Shortlist cutoffs vary by category-gender-background pool — public policy PDFs",
+        "gmat": "No category math; whole-profile evaluation",
+        "gre": "No category math; program-specific bars"
+      }
     ],
     "choose_if": {
       "cat": "Choose CAT if: budget ≤ ₹50L is hard, your pool math is favorable (check the current policy PDF, not folklore), and you can commit 15+ hrs/week for one season.",
@@ -20,34 +63,77 @@
   "facts": [
     {
       "id": "exam.cat.fee",
-      "claim": "CAT registration for General category has been ~₹2,600 (recent cycles).",
+      "claim": "CAT registration: ₹2,600 General/EWS, ₹1,300 reserved categories (CAT 2025).",
       "category": "exam",
-      "sources": [{ "title": "iimcat.ac.in", "url": "https://iimcat.ac.in" }],
-      "last_verified": "TODO",
-      "confidence": "needs_verification"
+      "sources": [
+        {
+          "title": "iimcat.ac.in — CAT official site",
+          "url": "https://iimcat.ac.in/"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
     },
     {
       "id": "exam.gmat.retake",
-      "claim": "GMAT: 5 attempts per rolling 12 months, 8 lifetime; score valid 5 years.",
+      "claim": "GMAT: $275 test centre / $300 online in the US; 5 attempts per rolling 12 months with a 16-day gap, 8 lifetime; score valid 5 years.",
       "category": "exam",
-      "sources": [{ "title": "mba.com (GMAC)", "url": "https://www.mba.com" }],
-      "last_verified": "TODO",
-      "confidence": "needs_verification"
+      "sources": [
+        {
+          "title": "mba.com support — exam cost",
+          "url": "https://support.mba.com/hc/en-us/articles/6284241279771-GMAT-How-Much-Does-The-Exam-Cost"
+        },
+        {
+          "title": "mba.com support — retake policies and attempt limits",
+          "url": "https://support.mba.com/hc/en-us/articles/10118337626139-GMAT-Retake-Policies-and-Attempt-Limits"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
     },
     {
       "id": "exam.gre.retake",
-      "claim": "GRE: retake every 21 days, max 5 per 12 months; score valid 5 years.",
+      "claim": "GRE: retake once every 21 days, up to 5 times per rolling 12 months; scores reportable for 5 years. Fee varies by country (US ~$220 — confirm on the ETS fees page).",
       "category": "exam",
-      "sources": [{ "title": "ets.org/gre", "url": "https://www.ets.org/gre" }],
-      "last_verified": "TODO",
-      "confidence": "needs_verification"
+      "sources": [
+        {
+          "title": "ets.org — GRE registration & retake policy",
+          "url": "https://www.ets.org/gre/test-takers/general-test/register.html"
+        },
+        {
+          "title": "ets.org — GRE fees",
+          "url": "https://www.ets.org/gre/test-takers/general-test/register/fees.html"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
     }
   ],
   "salary_bands": [
-    { "value": "lt10", "label": "<₹10L", "mid": 700000 },
-    { "value": "10-20", "label": "₹10–20L", "mid": 1500000 },
-    { "value": "20-35", "label": "₹20–35L", "mid": 2700000 },
-    { "value": "35-50", "label": "₹35–50L", "mid": 4200000 },
-    { "value": "50+", "label": "₹50L+", "mid": 6000000 }
+    {
+      "value": "lt10",
+      "label": "<₹10L",
+      "mid": 700000
+    },
+    {
+      "value": "10-20",
+      "label": "₹10–20L",
+      "mid": 1500000
+    },
+    {
+      "value": "20-35",
+      "label": "₹20–35L",
+      "mid": 2700000
+    },
+    {
+      "value": "35-50",
+      "label": "₹35–50L",
+      "mid": 4200000
+    },
+    {
+      "value": "50+",
+      "label": "₹50L+",
+      "mid": 6000000
+    }
   ]
 }

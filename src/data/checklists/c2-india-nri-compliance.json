@@ -4,14 +4,119 @@
   "group": "money-india",
   "banner": "Educational, not tax advice. Cross-border tax has sharp edges — confirm with a CA and a US CPA.",
   "items": [
-    { "id": "nro", "title": "Convert resident savings accounts to NRO", "why": "Once you're an NRI under FEMA, holding resident accounts is non-compliant. Banks convert in a branch visit or by post.", "sources": [{ "title": "RBI — accounts for non-residents", "url": "https://www.rbi.org.in" }], "last_verified": "TODO", "confidence": "needs_verification" },
-    { "id": "nre", "title": "Open an NRE account", "why": "Foreign earnings parked in NRE are fully repatriable and interest is India-tax-free while you're NRI.", "sources": [{ "title": "RBI — NRE deposits", "url": "https://www.rbi.org.in" }], "last_verified": "TODO", "confidence": "needs_verification" },
-    { "id": "gift-city", "title": "Evaluate a GIFT City USD account", "why": "USD deposits in IFSC banks can hold dollars in India without conversion — useful if you're India-bound in 3–5 years.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
-    { "id": "kyc", "title": "Update NRI status in bank + mutual-fund KYC", "why": "Old resident KYC on MF folios creates redemption and tax-reporting problems that take months to unwind.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] },
-    { "id": "fbar", "title": "File FBAR if foreign accounts exceeded $10k (aggregate, any day)", "why": "All non-US accounts combined, highest balance of the year. Penalties for missing it are brutal even when accidental.", "link": "https://www.fincen.gov/report-foreign-bank-and-financial-accounts", "sources": [{ "title": "FinCEN — FBAR", "url": "https://www.fincen.gov/report-foreign-bank-and-financial-accounts" }], "last_verified": "TODO", "confidence": "needs_verification" },
-    { "id": "fatca", "title": "Check Form 8938 (FATCA) thresholds", "why": "Separate from FBAR, filed with your tax return; thresholds depend on filing status and where you live.", "link": "https://www.irs.gov/forms-pubs/about-form-8938", "sources": [{ "title": "IRS — About Form 8938", "url": "https://www.irs.gov/forms-pubs/about-form-8938" }], "last_verified": "TODO", "confidence": "needs_verification" },
-    { "id": "dtaa", "title": "Set up DTAA relief for India TDS (Form 10F + TRC)", "why": "Without a US Tax Residency Certificate (Form 6166) + Form 10F, Indian payers deduct TDS at the highest rate on your NRO interest and other income.", "link": "https://www.irs.gov/individuals/international-taxpayers/form-6166-certification-of-us-tax-residency", "sources": [{ "title": "IRS — Form 6166", "url": "https://www.irs.gov/individuals/international-taxpayers/form-6166-certification-of-us-tax-residency" }], "last_verified": "TODO", "confidence": "needs_verification" },
-    { "id": "pan", "title": "Keep PAN active and linked", "why": "PAN-Aadhaar linking rules and inoperative-PAN consequences hit NRIs who ignore Indian filings for years.", "link": "https://www.incometax.gov.in", "sources": [{ "title": "Income Tax India portal", "url": "https://www.incometax.gov.in" }], "last_verified": "TODO", "confidence": "needs_verification" },
-    { "id": "nominations", "title": "Add nominations on every Indian account", "why": "Unnominated accounts of NRIs are among the hardest assets for families to claim. Fix it in one sitting.", "last_verified": "TODO", "confidence": "needs_verification", "sources": [] }
+    {
+      "id": "nro",
+      "title": "Convert resident savings accounts to NRO",
+      "why": "Once you're an NRI under FEMA, holding resident accounts is non-compliant. Banks convert in a branch visit or by post.",
+      "sources": [
+        {
+          "title": "RBI — FAQ: accounts in India by non-residents (FEMA 5(R))",
+          "url": "https://www.rbi.org.in/Scripts/FAQView.aspx?Id=53"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
+    },
+    {
+      "id": "nre",
+      "title": "Open an NRE account",
+      "why": "Foreign earnings parked in NRE are fully repatriable and interest is India-tax-free while you're NRI.",
+      "sources": [
+        {
+          "title": "RBI — FAQ: accounts in India by non-residents (FEMA 5(R))",
+          "url": "https://www.rbi.org.in/Scripts/FAQView.aspx?Id=53"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
+    },
+    {
+      "id": "gift-city",
+      "title": "Evaluate a GIFT City USD account",
+      "why": "USD deposits in IFSC banks can hold dollars in India without conversion — useful if you're India-bound in 3–5 years.",
+      "last_verified": "TODO",
+      "confidence": "needs_verification",
+      "sources": []
+    },
+    {
+      "id": "kyc",
+      "title": "Update NRI status in bank + mutual-fund KYC",
+      "why": "Old resident KYC on MF folios creates redemption and tax-reporting problems that take months to unwind.",
+      "last_verified": "TODO",
+      "confidence": "needs_verification",
+      "sources": []
+    },
+    {
+      "id": "fbar",
+      "title": "File FBAR if foreign accounts exceeded $10k (aggregate, any day)",
+      "why": "All non-US accounts combined, highest aggregate at ANY point in the year over $10,000 → FinCEN 114, filed with FinCEN (not the IRS). Penalties for missing it are brutal even when accidental.",
+      "link": "https://www.fincen.gov/report-foreign-bank-and-financial-accounts",
+      "sources": [
+        {
+          "title": "IRS — comparison of Form 8938 and FBAR requirements",
+          "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements"
+        },
+        {
+          "title": "FinCEN — FBAR",
+          "url": "https://www.fincen.gov/report-foreign-bank-and-financial-accounts"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
+    },
+    {
+      "id": "fatca",
+      "title": "Check Form 8938 (FATCA) thresholds",
+      "why": "Separate from FBAR, filed WITH your return: unmarried US residents trigger at $50k in specified foreign assets on Dec 31 or $75k at any time (doubled if married filing jointly; much higher living abroad).",
+      "link": "https://www.irs.gov/forms-pubs/about-form-8938",
+      "sources": [
+        {
+          "title": "IRS — do I need to file Form 8938?",
+          "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
+    },
+    {
+      "id": "dtaa",
+      "title": "Set up DTAA relief for India TDS (Form 10F + TRC)",
+      "why": "Without a US Tax Residency Certificate (Form 6166) + Form 10F, Indian payers deduct TDS at the highest rate on your NRO interest and other income.",
+      "link": "https://www.irs.gov/individuals/international-taxpayers/form-6166-certification-of-us-tax-residency",
+      "sources": [
+        {
+          "title": "IRS — Form 6166 certification of US tax residency",
+          "url": "https://www.irs.gov/individuals/international-taxpayers/form-6166-certification-of-us-tax-residency"
+        },
+        {
+          "title": "Income Tax India — Form 10F e-filing",
+          "url": "https://www.incometax.gov.in"
+        }
+      ],
+      "last_verified": "2026-07-07",
+      "confidence": "verified"
+    },
+    {
+      "id": "pan",
+      "title": "Keep PAN active and linked",
+      "why": "PAN-Aadhaar linking rules and inoperative-PAN consequences hit NRIs who ignore Indian filings for years.",
+      "link": "https://www.incometax.gov.in",
+      "sources": [
+        {
+          "title": "Income Tax India portal",
+          "url": "https://www.incometax.gov.in"
+        }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    },
+    {
+      "id": "nominations",
+      "title": "Add nominations on every Indian account",
+      "why": "Unnominated accounts of NRIs are among the hardest assets for families to claim. Fix it in one sitting.",
+      "last_verified": "TODO",
+      "confidence": "needs_verification",
+      "sources": []
+    }
   ]
 }
