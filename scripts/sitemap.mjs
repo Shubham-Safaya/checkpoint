@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** Generates dist/sitemap.xml at build time from the route inventory (§11). */
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
 const BASE = "https://shubham-safaya.github.io/checkpoint";
 const destinations = JSON.parse(readFileSync(new URL("../src/data/travel-destinations.json", import.meta.url), "utf8"));
@@ -20,4 +20,17 @@ ${routes.map((r) => `  <url><loc>${BASE}${r}</loc><lastmod>${today}</lastmod></u
 </urlset>
 `;
 writeFileSync(new URL("../dist/sitemap.xml", import.meta.url), xml);
-console.log(`sitemap.xml: ${routes.length} routes`);
+
+// Static shell per route: GitHub Pages then serves every deep link with a
+// real 200 (the 404.html fallback alone serves content but a 404 status,
+// which crawlers treat as missing pages).
+const shell = readFileSync(new URL("../dist/index.html", import.meta.url), "utf8");
+let shells = 0;
+for (const r of routes) {
+  if (r === "/") continue;
+  const dir = new URL(`../dist${r}/`, import.meta.url);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(new URL("index.html", dir), shell);
+  shells++;
+}
+console.log(`sitemap.xml: ${routes.length} routes · ${shells} static shells emitted`);
