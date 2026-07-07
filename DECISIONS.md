@@ -19,3 +19,7 @@ Ambiguities resolved with the simpler option, per spec instructions.
 | 13 | R8–R12 travel rules gate on nonimmigrant `us_status` values; GC/citizen profiles route via `travel.us-visa-unlocks` + destination records | Satisfies "GC holders never see visa-gated cards" while keeping their grid verdicts correct. |
 | 14 | R15 housing card renders via engine but /housing module is Phase 3 | Spec sequences housing UI in Phase 3; the rule content ships now. |
 | 15 | Guides are JSON-driven through one GuidePage component | Six guides, one renderer — copy edits never touch code. |
+| 16 | All Phase-3 tuition rows ship `sample_data` under the watermark; zero rows claimed verified this session | Spec: "do not fill twenty rows from memory". Bursar verification is the owner's refresh workflow. |
+| 17 | Housing mini-calculator uses price-to-rent multiples as the price/rent bands | Currency-neutral (works for Bengaluru and Bentonville), and it's the ratio that carries the signal, not absolute prices. |
+| 18 | "First crore" is two engine rules split on `long_term_base` | Flip conditions come free from the engine — undecided users see what choosing a base would change. |
+| 19 | SEO: SPA meta via usePageMeta hook + FAQ JSON-LD on guides + build-time sitemap.xml | No SSR on GitHub Pages; crawlers executing JS get full meta, sitemap covers all 35 routes for discovery. |

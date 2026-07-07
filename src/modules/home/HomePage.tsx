@@ -3,8 +3,10 @@ import { SITE_NAME } from "../../siteConfig";
 import { freshUrl } from "../../lib/share";
 import { useState } from "react";
 import MilestoneChip from "../../components/MilestoneChip";
+import { usePageMeta } from "../../lib/usePageMeta";
 
 export default function HomePage() {
+  usePageMeta("Pick your exam honestly", "Know your next immigration checkpoint. Get a checklist you can actually finish. For Indians going abroad or already there.");
   const [copied, setCopied] = useState(false);
 
   return (

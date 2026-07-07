@@ -4,6 +4,7 @@ import destinations from "../../data/travel-destinations.json";
 import type { DestinationRecord, TravelVerdict } from "../../lib/types";
 import { loadProfile } from "../../lib/storage";
 import MilestoneChip from "../../components/MilestoneChip";
+import { usePageMeta } from "../../lib/usePageMeta";
 
 const all = destinations as DestinationRecord[];
 
@@ -40,6 +41,7 @@ export const VERDICT_TONE: Record<TravelVerdict, "green" | "marigold" | "red" | 
 };
 
 export default function TravelPage() {
+  usePageMeta("Travel visa finder for Indian passports", "Where can you go with an Indian passport plus a US visa or green card? 20 destinations, verdicts computed for your documents, every rule badged with its verification date.");
   const [docs, setDocs] = useState<Docs>(docsFromProfile());
   const hasProfile = !!loadProfile().us_status || !!loadProfile().citizenship;
 

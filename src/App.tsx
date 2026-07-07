@@ -32,7 +32,9 @@ export default function App() {
     { to: "/pathways", label: "Pathways" },
     { to: "/immigration", label: "Immigration" },
     { to: "/travel", label: "Travel" },
+    { to: "/colleges", label: "Colleges" },
     { to: "/money", label: "Money" },
+    { to: "/housing", label: "Housing" },
     { to: "/my-list", label: "My list" },
   ];
 

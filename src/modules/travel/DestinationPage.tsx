@@ -5,11 +5,13 @@ import type { DestinationRecord } from "../../lib/types";
 import { docsFromProfile, verdictFor, VERDICT_LABEL, VERDICT_TONE, type Docs } from "./TravelPage";
 import MilestoneChip from "../../components/MilestoneChip";
 import VerifyBadge from "../../components/VerifyBadge";
+import { usePageMeta } from "../../lib/usePageMeta";
 
 export default function DestinationPage() {
   const { id } = useParams();
   const d = (destinations as DestinationRecord[]).find((x) => x.id === id);
   const [docs, setDocs] = useState<Docs>(docsFromProfile());
+  usePageMeta(d ? `${d.name} visa for Indian passport holders` : "Destination", d ? `Do Indians need a visa for ${d.name}? With a US visa or green card? Verdicts with official sources and verification dates.` : "");
 
   if (!d) {
     return (

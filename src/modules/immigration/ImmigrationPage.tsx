@@ -3,6 +3,7 @@ import { runRules } from "../../engine/rules";
 import { loadProfile } from "../../lib/storage";
 import VerdictCardView, { LockedCardView } from "../../components/VerdictCardView";
 import MilestoneChip from "../../components/MilestoneChip";
+import { usePageMeta } from "../../lib/usePageMeta";
 
 const STAGES = [
   { id: "f1", label: "F-1", sub: "student" },
@@ -38,6 +39,7 @@ const GUIDES = [
 ];
 
 export default function ImmigrationPage() {
+  usePageMeta("US immigration checkpoints", "F-1 to citizenship as a checkpoint timeline, with YOU ARE HERE pinned from your profile — and the guides for the forks: PERM vs NIW vs EB1A, the H-1B clock, Day-1 CPT, legal income.");
   const profile = loadProfile();
   const here = stageFromProfile(profile);
   const { matched, locked } = runRules(profile, "immigration");

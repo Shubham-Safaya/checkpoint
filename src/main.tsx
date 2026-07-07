@@ -12,6 +12,8 @@ import MyListPage from "./modules/mylist/MyListPage";
 import PathwaysPage from "./modules/pathways/PathwaysPage";
 import ImmigrationPage from "./modules/immigration/ImmigrationPage";
 import GuidePage from "./modules/immigration/GuidePage";
+import CollegesPage from "./modules/colleges/CollegesPage";
+import HousingPage from "./modules/housing/HousingPage";
 import "./index.css";
 
 const router = createBrowserRouter(
@@ -29,6 +31,8 @@ const router = createBrowserRouter(
         { path: "immigration", element: <ImmigrationPage /> },
         { path: "immigration/eb1a-tracker", element: <EB1ATracker /> },
         { path: "immigration/:slug", element: <GuidePage /> },
+        { path: "colleges", element: <CollegesPage /> },
+        { path: "housing", element: <HousingPage /> },
         { path: "my-list", element: <MyListPage /> },
         { path: "*", element: <HomePage /> },
       ],

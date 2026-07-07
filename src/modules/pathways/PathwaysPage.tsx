@@ -7,6 +7,7 @@ import { formatINR } from "../../lib/currency";
 import VerdictCardView, { LockedCardView } from "../../components/VerdictCardView";
 import VerifyBadge from "../../components/VerifyBadge";
 import MilestoneChip from "../../components/MilestoneChip";
+import { usePageMeta } from "../../lib/usePageMeta";
 
 const exams = examsData as unknown as {
   matrix: {
@@ -30,6 +31,7 @@ function highlightColumn(profile: ReturnType<typeof loadProfile>): string | null
 }
 
 export default function PathwaysPage() {
+  usePageMeta("CAT vs GMAT vs GRE, honestly", "Base rates, category math, retake economics, and the years question — the exam fork with your profile applied.");
   const profile = loadProfile();
   const { matched, locked } = runRules(profile, "pathways");
   const hl = highlightColumn(profile);

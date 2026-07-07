@@ -1,0 +1,16 @@
+{
+  "id": "nri-property-india",
+  "title": "NRI property purchase in India",
+  "group": "money-india",
+  "banner": "CA sign-off required on the money trail and tax steps — this list narrows, a CA confirms.",
+  "items": [
+    { "id": "funding-trail", "title": "Fund only through NRE/NRO/FCNR banking channels", "why": "FEMA requires purchase funds to flow through your NRI accounts or inward remittance — cash or resident-account funding creates problems you meet years later at sale/repatriation time.", "sources": [{ "title": "RBI — FEMA, acquisition of immovable property", "url": "https://www.rbi.org.in" }], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "poa", "title": "Execute a Power of Attorney if buying remotely", "why": "Registration needs presence or a POA — executed at the Indian consulate (or notarized + apostilled), then adjudicated in India. Do it before the deal, not during.", "sources": [], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "tds-seller", "title": "TDS depends on the SELLER's residency — check both branches", "why": "Buying from a resident: TDS 1% over ₹50L (194-IA). Buying from another NRI: TDS jumps to 20%+ (195) on the whole consideration — buyers who miss this personally owe the shortfall.", "sources": [{ "title": "Income Tax India — TDS provisions", "url": "https://www.incometax.gov.in" }], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "loan", "title": "NRI home-loan basics", "why": "NRI loans exist at most large banks: repayment must come from NRE/NRO/inward remittance; expect lower LTV and India-income or co-applicant preferences.", "sources": [], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "repatriation", "title": "Know the repatriation limits before you buy", "why": "Sale proceeds repatriation is capped (commonly two residential properties' proceeds; USD 1M/yr overall under LRS-adjacent rules for NRO balances) — if exit-flexibility matters, this shapes what you buy.", "sources": [{ "title": "RBI — remittance of assets", "url": "https://www.rbi.org.in" }], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "gift-funding", "title": "Family gift-funding: document it like an audit is coming", "why": "Gifts from close relatives are tax-exempt but the paper trail (gift deed, donor's source, bank channel) is what protects you — CA sign-off required.", "sources": [], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "stamp-duty", "title": "Stamp duty + registration vary by state (and sometimes by gender)", "why": "Budget 5–8% extra depending on the state; several states discount for women owners — check the state portal for current rates.", "sources": [], "last_verified": "TODO", "confidence": "needs_verification" },
+    { "id": "title-check", "title": "Independent title + encumbrance check", "why": "RERA registration, 30-year title search, encumbrance certificate — the boring paperwork is the entire protection when you live 13,000 km away.", "sources": [], "last_verified": "TODO", "confidence": "needs_verification" }
+  ]
+}

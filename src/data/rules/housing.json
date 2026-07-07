@@ -3,9 +3,16 @@
     "id": "housing.fork",
     "module": "housing",
     "priority": 10,
-    "if": { "all": [
-      { "field": "goal", "in": ["property"] }
-    ]},
+    "if": {
+      "all": [
+        {
+          "field": "goal",
+          "in": [
+            "property"
+          ]
+        }
+      ]
+    },
     "then": {
       "verdict": "Rent vs buy is a horizon question — and on a visa, a status question",
       "headline": "The 5-year test decides most cases; H-1B adds a card most calculators ignore",
@@ -15,20 +22,163 @@
         "The visa-stability card, said plainly: buying in the US on H-1B means a job loss starts a 60-day clock WHILE you hold a mortgage. That combination — forced job search + forced sale or forced landlording, simultaneously — is the real worst case, and it happens to real people every layoff cycle.",
         "Where should the first crore go: if long-term base is India in 3–5 years, an India purchase with NRI compliance done right often dominates; if US-permanent, US equity + retirement accounts usually come before US property."
       ],
-      "pros": ["Owning is a genuine hedge against rent inflation when the horizon is honest", "NRI purchase in India can lock a future base at today's prices"],
-      "cons": ["US: property ties you to a metro while your visa ties you to an employer — two anchors, one boat", "India: NRI purchases have TDS, repatriation, and POA landmines (checklist covers them)"],
+      "pros": [
+        "Owning is a genuine hedge against rent inflation when the horizon is honest",
+        "NRI purchase in India can lock a future base at today's prices"
+      ],
+      "cons": [
+        "US: property ties you to a metro while your visa ties you to an employer — two anchors, one boat",
+        "India: NRI purchases have TDS, repatriation, and POA landmines (checklist covers them)"
+      ],
       "worst_case": {
         "scenario": "Layoff on H-1B: 60 days to find a sponsor, a mortgage due monthly, and a market where selling takes 90+ days",
         "how_bad": "status-risk",
         "mitigation": "Buy only with: 6+ months of full carrying costs banked, a spouse with independent status or income where possible, and a realistic resale/rental liquidity check on the specific neighborhood"
       },
       "actions": [
-        { "label": "NRI purchase checklist", "how": "Funding trail, POA, TDS-by-seller-type, repatriation — the India-purchase landmines", "link": "/housing" },
-        { "label": "Run the 5-year test", "how": "Housing → mini-calculator (Phase 3)", "link": "/housing" }
+        {
+          "label": "NRI purchase checklist",
+          "how": "Funding trail, POA, TDS-by-seller-type, repatriation — the India-purchase landmines",
+          "link": "/housing"
+        },
+        {
+          "label": "Run the 5-year test",
+          "how": "Housing → mini-calculator (Phase 3)",
+          "link": "/housing"
+        }
       ],
       "sources": [
-        { "title": "RBI — acquisition of immovable property in India by NRIs (FEMA)", "url": "https://www.rbi.org.in" },
-        { "title": "Income Tax India — TDS on property purchase", "url": "https://www.incometax.gov.in" }
+        {
+          "title": "RBI — acquisition of immovable property in India by NRIs (FEMA)",
+          "url": "https://www.rbi.org.in"
+        },
+        {
+          "title": "Income Tax India — TDS on property purchase",
+          "url": "https://www.incometax.gov.in"
+        }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "housing.first-crore-india",
+    "module": "housing",
+    "priority": 20,
+    "if": {
+      "all": [
+        {
+          "field": "goal",
+          "in": [
+            "property"
+          ]
+        },
+        {
+          "field": "long_term_base",
+          "in": [
+            "india_3_5"
+          ]
+        }
+      ]
+    },
+    "then": {
+      "verdict": "First crore: India, with the compliance done right",
+      "headline": "If your base is India in 3–5 years, buying your future base beats renting someone else's present",
+      "why": [
+        "You'd be buying the asset you'll actually use — currency risk, repatriation limits, and landlord risk all shrink when the property and the life plan are in the same country.",
+        "NRE-funded purchases lock today's rupee prices against your dollar earnings — a real hedge if your income currency is USD and your future expenses are INR.",
+        "The compliance list (funding trail, TDS-by-seller, POA) is annoying exactly once — at purchase. Do it right and the asset is clean forever."
+      ],
+      "pros": [
+        "Asset and life plan aligned",
+        "Dollar income buying rupee assets is structural tailwind",
+        "Family can use/oversee the property meanwhile"
+      ],
+      "cons": [
+        "Illiquid if plans change — and plans change",
+        "Rental yields in India are low (2–3%); this is a use-asset, not an income-asset"
+      ],
+      "worst_case": {
+        "scenario": "Plans change, you stay in the US, and the flat sits as a 2% yield asset with repatriation caps on exit",
+        "how_bad": "expensive",
+        "mitigation": "Buy only what you'd be happy holding as a family base even if you never move back — location over yield math"
+      },
+      "actions": [
+        {
+          "label": "Open the NRI purchase checklist",
+          "how": "Housing → the compliance landmines",
+          "link": "/housing"
+        }
+      ],
+      "sources": [
+        {
+          "title": "RBI — FEMA property rules",
+          "url": "https://www.rbi.org.in"
+        }
+      ],
+      "last_verified": "TODO",
+      "confidence": "needs_verification"
+    }
+  },
+  {
+    "id": "housing.first-crore-us",
+    "module": "housing",
+    "priority": 21,
+    "if": {
+      "all": [
+        {
+          "field": "goal",
+          "in": [
+            "property"
+          ]
+        },
+        {
+          "field": "long_term_base",
+          "in": [
+            "us"
+          ]
+        }
+      ]
+    },
+    "then": {
+      "verdict": "First crore: US index funds before US property",
+      "headline": "If your base is the US permanently, fill the tax-advantaged buckets before the down payment",
+      "why": [
+        "The order-of-operations math rarely favors property first: 401(k) match, HSA, Roth/backdoor, then taxable index funds compound without property taxes, maintenance, or a 60-day-clock interaction.",
+        "A down payment parked in index funds stays liquid while your green-card timeline resolves — the single biggest unknown in your 5-year test.",
+        "Buy when three things align: I-140 approved (or better), 5+ year city confidence, and price-to-rent under ~22× in your metro."
+      ],
+      "pros": [
+        "Liquidity while immigration status resolves",
+        "No forced-sale scenario in a layoff",
+        "Diversified instead of one-metro concentrated"
+      ],
+      "cons": [
+        "Rent inflation is real — a decade of renting in a hot metro has its own cost",
+        "Property forces savings; brokerage accounts require discipline"
+      ],
+      "worst_case": {
+        "scenario": "You wait, your metro appreciates 40%, and the entry price runs away from you",
+        "how_bad": "recoverable",
+        "mitigation": "The same index-fund portfolio participated in much of that growth — you're late to one asset, not poor. Re-run the 5-year test yearly."
+      },
+      "actions": [
+        {
+          "label": "Money order of operations",
+          "how": "Money → the buckets, in order",
+          "link": "/money"
+        },
+        {
+          "label": "Run the 5-year test",
+          "how": "Housing → mini-calculator",
+          "link": "/housing"
+        }
+      ],
+      "sources": [
+        {
+          "title": "IRS — retirement plans",
+          "url": "https://www.irs.gov/retirement-plans"
+        }
       ],
       "last_verified": "TODO",
       "confidence": "needs_verification"

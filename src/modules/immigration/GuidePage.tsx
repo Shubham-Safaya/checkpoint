@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import guides from "../../data/guides/immigration-guides.json";
 import VerifyBadge from "../../components/VerifyBadge";
 import type { Confidence, Source } from "../../lib/types";
+import { usePageMeta, useFaqJsonLd } from "../../lib/usePageMeta";
 
 interface Guide {
   title: string;
@@ -13,6 +14,8 @@ interface Guide {
 export default function GuidePage() {
   const { slug } = useParams();
   const guide = (guides as Record<string, Guide>)[slug || ""];
+  usePageMeta(guide?.title || "Guide", guide ? guide.sections[0].p.slice(0, 155) : "");
+  useFaqJsonLd(guide ? guide.sections.map((s) => ({ q: s.h, a: s.p })) : []);
 
   if (!guide) {
     return (

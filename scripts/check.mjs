@@ -90,5 +90,11 @@ assert("R1 flip conditions produced (≥1, ≤3)", flips.length >= 1 && flips.le
 const many = evaluate({ ...founder, hassle_tolerance: "minimal" }, RULES, ORD).matched;
 assert("matched rules sorted by priority", many.every((r, i) => i === 0 || many[i - 1].priority <= r.priority));
 
+/* 16-17. First-crore housing rules split on long_term_base */
+const propIndia = ids(evaluate({ goal: ["property"], long_term_base: "india_3_5" }, RULES, ORD));
+assert("first-crore-india for India-bound base", propIndia.includes("housing.first-crore-india") && !propIndia.includes("housing.first-crore-us"));
+const propUS = ids(evaluate({ goal: ["property"], long_term_base: "us" }, RULES, ORD));
+assert("first-crore-us for US-permanent base", propUS.includes("housing.first-crore-us") && !propUS.includes("housing.first-crore-india"));
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

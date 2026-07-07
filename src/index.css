@@ -58,6 +58,16 @@
   @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 }
 
+.sample-wrap { position: relative; overflow: hidden; }
+.sample-wrap::before {
+  content: "SAMPLE"; position: absolute; inset: 0; z-index: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: "IBM Plex Mono", monospace; font-weight: 700;
+  font-size: clamp(3rem, 14vw, 7rem); letter-spacing: 0.25em;
+  color: rgba(179, 55, 47, 0.10); transform: rotate(-18deg);
+  pointer-events: none;
+}
+
 @media print {
   header, footer, .no-print { display: none !important; }
   body { background: #fff; }

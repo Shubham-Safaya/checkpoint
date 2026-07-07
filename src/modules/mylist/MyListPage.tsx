@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import c1 from "../../data/checklists/c1-us-first-90-days.json";
 import c2 from "../../data/checklists/c2-india-nri-compliance.json";
+import c4 from "../../data/checklists/c4-nri-property.json";
 import type { Checklist } from "../../lib/types";
 import { loadLists, loadProfile } from "../../lib/storage";
 import { shareUrl, freshUrl } from "../../lib/share";
@@ -20,6 +21,7 @@ export default function MyListPage() {
   if (inUS || goals.includes("money")) included.push(c1 as unknown as Checklist);
   if (inUS || goals.includes("money") || goals.includes("next_checkpoint"))
     included.push(c2 as unknown as Checklist);
+  if (goals.includes("property")) included.push(c4 as unknown as Checklist);
 
   const eb1aRelevant = goals.includes("green_card") || goals.includes("next_checkpoint");
   const eb1aStrong = Object.values(lists.eb1a).filter((c) => c.strength === "strong").length;

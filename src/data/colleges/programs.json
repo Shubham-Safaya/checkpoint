@@ -1,0 +1,36 @@
+{
+  "countries": {
+    "us": { "name": "United States", "post_study": "F-1 OPT 12 months + 24-month STEM extension for eligible degrees; then the H-1B lottery reality.", "post_study_confidence": "needs_verification" },
+    "uk": { "name": "United Kingdom", "post_study": "Graduate Route: 2 years post-study (3 for PhD) without sponsorship; then Skilled Worker.", "post_study_confidence": "needs_verification" },
+    "canada": { "name": "Canada", "post_study": "PGWP up to 3 years depending on program length and current field eligibility rules — verify, rules tightened recently.", "post_study_confidence": "needs_verification" },
+    "germany": { "name": "Germany", "post_study": "18-month job-seeker residence permit after graduation; Blue Card path once employed.", "post_study_confidence": "needs_verification" },
+    "france": { "name": "France", "post_study": "APS / job-search stay (12–24 months per current India-France agreements) — verify current terms.", "post_study_confidence": "needs_verification" },
+    "singapore": { "name": "Singapore", "post_study": "No default post-study permit — you need an EP/S Pass offer; Tuition Grant takers owe a 3-year work bond.", "post_study_confidence": "needs_verification" },
+    "australia": { "name": "Australia", "post_study": "Temporary Graduate visa (485): typically 2–3 years by qualification — verify current settings.", "post_study_confidence": "needs_verification" },
+    "nz": { "name": "New Zealand", "post_study": "Post Study Work Visa up to 3 years by qualification level.", "post_study_confidence": "needs_verification" }
+  },
+  "domains": {
+    "mba_consulting": "MBA — Consulting",
+    "mba_finance": "MBA — Finance",
+    "mem_mspm": "MEM / MS Product-Engineering Management",
+    "ms_cs_data": "MS CS / Data",
+    "mfin_mfe": "MFin / MFE"
+  },
+  "programs": [
+    { "country": "us", "domain": "mem_mspm", "school": "Duke University", "program": "MEng Management (MEM)", "duration": "1–1.5 yr", "tuition_local": "$65k–75k total", "all_in_inr": 9500000, "living_band": "₹18–25L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "Duke MEMP — tuition (bursar)", "url": "https://memp.pratt.duke.edu" }] },
+    { "country": "us", "domain": "ms_cs_data", "school": "UT Austin", "program": "MS Computer Science", "duration": "2 yr", "tuition_local": "$45k–60k total", "all_in_inr": 8000000, "living_band": "₹14–20L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "UT Austin — tuition", "url": "https://onestop.utexas.edu/managing-costs/cost-tuition-rates/" }] },
+    { "country": "us", "domain": "mba_consulting", "school": "Ross / Fuqua tier", "program": "Full-time MBA", "duration": "2 yr", "tuition_local": "$160k–180k total", "all_in_inr": 22000000, "living_band": "₹20–28L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "School bursar pages", "url": "TODO" }] },
+    { "country": "uk", "domain": "mba_finance", "school": "LBS / Oxford Saïd tier", "program": "MBA (15–21 mo)", "duration": "1–1.75 yr", "tuition_local": "£90k–120k", "all_in_inr": 14500000, "living_band": "₹18–26L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "Program fee pages", "url": "TODO" }] },
+    { "country": "uk", "domain": "ms_cs_data", "school": "Russell Group tier", "program": "MSc Computer Science / Data Science", "duration": "1 yr", "tuition_local": "£28k–38k", "all_in_inr": 5500000, "living_band": "₹14–22L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "University fee pages", "url": "TODO" }] },
+    { "country": "canada", "domain": "ms_cs_data", "school": "UBC / Waterloo tier", "program": "MSc / MEng Computing", "duration": "1.5–2 yr", "tuition_local": "C$40k–65k total", "all_in_inr": 5800000, "living_band": "₹10–16L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "University fee pages", "url": "TODO" }] },
+    { "country": "canada", "domain": "mem_mspm", "school": "UofT / McMaster tier", "program": "MEng / MMI", "duration": "1–1.5 yr", "tuition_local": "C$45k–70k total", "all_in_inr": 6200000, "living_band": "₹11–17L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "University fee pages", "url": "TODO" }] },
+    { "country": "germany", "domain": "ms_cs_data", "school": "TU9 public (TUM, RWTH…)", "program": "MSc Informatics / Data", "duration": "2 yr", "tuition_local": "€0–6k/yr (public; Bavaria non-EU fees exist — verify per university)", "all_in_inr": 2400000, "living_band": "₹8–12L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "DAAD + university fee pages", "url": "https://www.daad.de/en/" }] },
+    { "country": "germany", "domain": "mem_mspm", "school": "TU public tier", "program": "MSc Management & Engineering", "duration": "2 yr", "tuition_local": "€0–6k/yr", "all_in_inr": 2600000, "living_band": "₹8–12L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "DAAD", "url": "https://www.daad.de/en/" }] },
+    { "country": "france", "domain": "mba_consulting", "school": "INSEAD / HEC tier", "program": "MBA (10–16 mo)", "duration": "1–1.3 yr", "tuition_local": "€90k–100k", "all_in_inr": 12500000, "living_band": "₹16–24L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "Program fee pages", "url": "TODO" }] },
+    { "country": "france", "domain": "mfin_mfe", "school": "HEC / ESSEC tier", "program": "MSc Finance", "duration": "1–1.5 yr", "tuition_local": "€35k–55k", "all_in_inr": 6800000, "living_band": "₹14–20L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "Program fee pages", "url": "TODO" }] },
+    { "country": "singapore", "domain": "ms_cs_data", "school": "NUS / NTU", "program": "MComp / MSc (with vs without Tuition Grant)", "duration": "1–1.5 yr", "tuition_local": "S$50k–60k (grant cuts sharply; 3-yr bond applies)", "all_in_inr": 5200000, "living_band": "₹14–20L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "NUS/NTU fee pages + MOE Tuition Grant", "url": "https://tgonline.moe.gov.sg" }] },
+    { "country": "australia", "domain": "ms_cs_data", "school": "Go8 tier (Melbourne, UNSW…)", "program": "Master of IT / Data Science", "duration": "2 yr", "tuition_local": "A$90k–110k total", "all_in_inr": 8500000, "living_band": "₹13–19L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "University fee pages", "url": "TODO" }] },
+    { "country": "nz", "domain": "ms_cs_data", "school": "Auckland / Victoria tier", "program": "MSc Computer Science", "duration": "1–1.5 yr", "tuition_local": "NZ$45k–60k total", "all_in_inr": 4500000, "living_band": "₹10–15L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "University fee pages", "url": "TODO" }] },
+    { "country": "us", "domain": "mfin_mfe", "school": "CMU / Baruch tier", "program": "MSCF / MFE", "duration": "1.5 yr", "tuition_local": "$80k–100k total", "all_in_inr": 11000000, "living_band": "₹18–26L/yr", "confidence": "sample_data", "last_verified": "TODO", "sources": [{ "title": "Program fee pages", "url": "TODO" }] }
+  ]
+}
