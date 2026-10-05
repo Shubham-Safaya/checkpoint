@@ -19,7 +19,7 @@ export default function VerdictCardView({ rule }: { rule: Rule }) {
     <article className="card reveal space-y-3">
       <div className="flex items-start gap-3 flex-wrap">
         <MilestoneChip top={card.verdict.split(" ").slice(0, 2).join(" ").toUpperCase()} bottom={rule.module} small />
-        <div className="flex-1 min-w-[12rem]">
+        <div className="flex-1 min-w-48">
           <h3 className="text-lg font-bold leading-snug">{card.verdict}</h3>
           <p className="text-sm text-ink/80">{card.headline}</p>
         </div>
@@ -55,10 +55,10 @@ export default function VerdictCardView({ rule }: { rule: Rule }) {
       <div className="flex gap-2 flex-wrap">
         {card.actions.map((a) =>
           a.link?.startsWith("/") ? (
-            <Link key={a.label} to={a.link} className="btn btn-secondary !py-1.5 text-xs" title={a.how}>{a.label}</Link>
+            <Link key={a.label} to={a.link} className="btn btn-secondary py-1.5! text-xs" title={a.how}>{a.label}</Link>
           ) : (
             <a key={a.label} href={a.link} target="_blank" rel="noopener noreferrer"
-              className="btn btn-secondary !py-1.5 text-xs" title={a.how}>{a.label}</a>
+              className="btn btn-secondary py-1.5! text-xs" title={a.how}>{a.label}</a>
           )
         )}
       </div>

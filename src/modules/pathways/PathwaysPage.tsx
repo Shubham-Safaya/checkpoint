@@ -119,13 +119,13 @@ export default function PathwaysPage() {
         <div className="flex gap-3 flex-wrap items-end">
           <label className="text-sm font-semibold">
             Retake years
-            <select className="field !w-auto" value={attempts} onChange={(e) => setAttempts(Number(e.target.value))}>
+            <select className="field w-auto!" value={attempts} onChange={(e) => setAttempts(Number(e.target.value))}>
               {[1, 2, 3].map((n) => <option key={n} value={n}>{n}</option>)}
             </select>
           </label>
           <label className="text-sm font-semibold">
             Current salary band
-            <select className="field !w-auto" value={band} onChange={(e) => setBand(e.target.value)}>
+            <select className="field w-auto!" value={band} onChange={(e) => setBand(e.target.value)}>
               {exams.salary_bands.map((b) => <option key={b.value} value={b.value}>{b.label}</option>)}
             </select>
           </label>

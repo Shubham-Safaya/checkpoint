@@ -12,9 +12,9 @@ export default function MilestoneChip({
 }) {
   const tones: Record<string, string> = {
     marigold: "",
-    green: "!bg-cleargreen !text-white",
-    red: "!bg-signalred !text-white",
-    neutral: "!bg-ink/10 !text-ink",
+    green: "bg-cleargreen! text-white!",
+    red: "bg-signalred! text-white!",
+    neutral: "bg-ink/10! text-ink!",
   };
   return (
     <span className={`milestone ${small ? "milestone-sm" : ""} ${tones[tone]}`}>

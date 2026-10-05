@@ -74,7 +74,7 @@ export default function EB1ATracker() {
                 <div className="flex gap-1 no-print" role="group" aria-label={`Strength for ${c.title}`}>
                   {STRENGTHS.map((s) => (
                     <button key={s}
-                      className={`chip !px-2.5 !py-1 text-xs capitalize ${cur.strength === s ? "chip-on" : ""}`}
+                      className={`chip px-2.5! py-1! text-xs capitalize ${cur.strength === s ? "chip-on" : ""}`}
                       aria-pressed={cur.strength === s}
                       onClick={() => setStrength(c.id, s)}>
                       {s}
@@ -103,7 +103,7 @@ export default function EB1ATracker() {
                   input.value = "";
                 }}>
                 <input name="artifact" className="field text-sm" placeholder="Log evidence: what, where, date…" maxLength={200} />
-                <button className="btn btn-secondary !py-1.5 text-xs" type="submit">Add</button>
+                <button className="btn btn-secondary py-1.5! text-xs" type="submit">Add</button>
               </form>
             </div>
           );

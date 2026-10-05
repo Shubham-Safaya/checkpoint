@@ -28,7 +28,9 @@ export default function GuidePage() {
 
   return (
     <div className="max-w-2xl mx-auto space-y-5">
-      <Link className="text-linkblue text-sm underline no-print" to="/immigration">← immigration checkpoints</Link>
+      <div className="no-print">
+        <Link className="text-linkblue text-sm underline" to="/immigration">← immigration checkpoints</Link>
+      </div>
       <h1 className="text-2xl">{guide.title}</h1>
       <p className="banner-caution">{guide.banner}</p>
 

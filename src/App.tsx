@@ -40,7 +40,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="border-b border-ink/10 bg-paper/95 sticky top-0 z-10 backdrop-blur no-print">
+      <header className="border-b border-ink/10 bg-paper/95 sticky top-0 z-10 backdrop-blur-sm no-print">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-4 overflow-x-auto">
           <Link to="/" className="font-display font-bold text-lg whitespace-nowrap">{SITE_NAME}</Link>
           <nav className="flex gap-1 text-sm" aria-label="Main">
@@ -58,11 +58,11 @@ export default function App() {
       {incoming && (
         <div className="banner-caution m-3 flex items-center gap-3 flex-wrap no-print" role="alertdialog">
           <span>Someone shared a profile with you. Load it? It will replace the answers stored in this browser.</span>
-          <button className="btn !py-1.5 text-xs"
+          <button className="btn py-1.5! text-xs"
             onClick={() => { saveProfile(incoming); setIncoming(null); navigate("/my-list"); }}>
             Load this profile
           </button>
-          <button className="btn btn-secondary !py-1.5 text-xs" onClick={() => setIncoming(null)}>
+          <button className="btn btn-secondary py-1.5! text-xs" onClick={() => setIncoming(null)}>
             Keep mine
           </button>
         </div>

@@ -35,7 +35,7 @@ export default function DestinationPage() {
       <div className="card mb-4">
         <div className="flex items-center gap-2 flex-wrap mb-2 no-print">
           <span className="text-sm font-semibold">For:</span>
-          <select className="field !w-auto" value={docs} onChange={(e) => setDocs(e.target.value as Docs)}>
+          <select className="field w-auto!" value={docs} onChange={(e) => setDocs(e.target.value as Docs)}>
             <option value="none">Indian passport only</option>
             <option value="us_visa">+ valid US visa</option>
             <option value="green_card">+ US green card</option>

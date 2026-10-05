@@ -55,7 +55,7 @@ export default function TravelPage() {
 
       <div className="card mb-5 flex flex-wrap items-center gap-3 no-print">
         <span className="font-semibold text-sm">Your documents:</span>
-        <select className="field !w-auto" value={docs} onChange={(e) => setDocs(e.target.value as Docs)}
+        <select className="field w-auto!" value={docs} onChange={(e) => setDocs(e.target.value as Docs)}
           aria-label="Documents you hold">
           <option value="none">Indian passport only</option>
           <option value="us_visa">+ valid US visa (any category)</option>

@@ -17,7 +17,7 @@ export default function HomePage() {
           <MilestoneChip top="VISA" bottom="next checkpoint" />
           <MilestoneChip top="LIST" bottom="actually finish" />
         </div>
-        <h1 className="text-3xl sm:text-4xl leading-tight mb-3">
+        <h1 className="text-3xl sm:text-4xl leading-tight sm:leading-10 mb-3">
           Pick your exam honestly.<br />Know your next immigration checkpoint.<br />Get a checklist you can actually finish.
         </h1>
         <p className="text-ink/70 max-w-xl mb-6">

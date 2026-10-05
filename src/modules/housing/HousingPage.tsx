@@ -74,7 +74,7 @@ export default function HousingPage() {
         </div>
         <div className="flex items-center gap-3 flex-wrap">
           <MilestoneChip top={verdict.v} bottom="framework verdict" tone={verdict.tone} />
-          <p className="text-sm flex-1 min-w-[14rem]">{verdict.why}</p>
+          <p className="text-sm flex-1 min-w-56">{verdict.why}</p>
         </div>
       </section>
 

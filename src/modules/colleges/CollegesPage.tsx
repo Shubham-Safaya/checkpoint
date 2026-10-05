@@ -68,12 +68,12 @@ export default function CollegesPage() {
 
       <div className="card flex flex-wrap gap-3 items-end no-print">
         <label className="text-sm font-semibold">Country
-          <select className="field !w-auto" value={country} onChange={(e) => setCountry(e.target.value)}>
+          <select className="field w-auto!" value={country} onChange={(e) => setCountry(e.target.value)}>
             {Object.entries(data.countries).map(([k, v]) => <option key={k} value={k}>{v.name}</option>)}
           </select>
         </label>
         <label className="text-sm font-semibold">Domain
-          <select className="field !w-auto" value={domain} onChange={(e) => setDomain(e.target.value)}>
+          <select className="field w-auto!" value={domain} onChange={(e) => setDomain(e.target.value)}>
             {Object.entries(data.domains).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
           </select>
         </label>
@@ -130,12 +130,12 @@ export default function CollegesPage() {
         <p className="text-sm text-ink/70 mb-3">Cost band vs funding band — the ₹1-crore-loan question, answered before the loan.</p>
         <div className="flex flex-wrap gap-3 items-end">
           <label className="text-sm font-semibold">Budget (no loans)
-            <select className="field !w-auto" value={calcBudget} onChange={(e) => setCalcBudget(e.target.value)}>
+            <select className="field w-auto!" value={calcBudget} onChange={(e) => setCalcBudget(e.target.value)}>
               {Object.keys(BUDGET_MAX).map((b) => <option key={b} value={b}>{b.replace("L", "L ₹")}</option>)}
             </select>
           </label>
           <label className="text-sm font-semibold">Loan access
-            <select className="field !w-auto" value={calcLoans} onChange={(e) => setCalcLoans(e.target.value)}>
+            <select className="field w-auto!" value={calcLoans} onChange={(e) => setCalcLoans(e.target.value)}>
               <option value="collateral">Collateral-backed</option>
               <option value="no_collateral">No-collateral only</option>
               <option value="no_loans">Prefer no loans</option>
